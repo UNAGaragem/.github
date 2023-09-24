@@ -233,7 +233,7 @@ public class CadastroCliente extends javax.swing.JFrame {
             }
         });
 
-        jTextField10.setEnabled(false);
+        jTextField10.setFocusable(false);
         jTextField10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField10ActionPerformed(evt);

@@ -1,20 +1,18 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
-package projunagaragem;
+package View;
 
 /**
  *
  * @author sudar
  */
 public class ProjUnaGaragem {
-
+    
     public static void main(String[] args) {
         
-         View.Login Login = new View.Login();
+         Login Login = new Login();
          Login.setVisible(true);
-       
     }
 }
