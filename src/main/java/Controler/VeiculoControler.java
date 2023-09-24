@@ -11,8 +11,7 @@ import Model.Veiculo;
 public class VeiculoControler {
     
    public boolean CadastrarVeiculo(String placa,String modelo,String ano, String motorizacao, 
-           
-        String combustivel, String quilometragem) {
+           String combustivel, String quilometragem) {
         
         if(placa != null && placa.length()>0 &&
                 modelo != null && modelo.length()>0 &&

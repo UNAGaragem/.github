@@ -22,8 +22,6 @@ public class CaminhoUsuario extends javax.swing.JFrame {
         initComponents();
         AtualizarCampoData();
     }
-    
-        
     private void AtualizarCampoData(){
                         String formatodDate = "";
      Date date = new Date();

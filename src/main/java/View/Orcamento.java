@@ -21,12 +21,12 @@ public class Orcamento extends javax.swing.JFrame {
      */
     public Orcamento() {
         initComponents();
-        AtualizarCampoData();
+        
+                    AtualizarCampoData();
     }
 
     private void AtualizarCampoData(){
-     
-     String formatodDate = "";
+                        String formatodDate = "";
      Date date = new Date();
      DateFormat formato = new SimpleDateFormat("dd/MM/yyyy HH:mm");
      formatodDate = formato.format(date);

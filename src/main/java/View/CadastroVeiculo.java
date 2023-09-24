@@ -8,7 +8,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import Controler.VeiculoControler;
-
 import javax.swing.JOptionPane;
 /**
  *
@@ -25,7 +24,7 @@ public class CadastroVeiculo extends javax.swing.JFrame {
     }
 
     private void AtualizarCampoData(){
-     String formatodDate = "";
+                        String formatodDate = "";
      Date date = new Date();
      DateFormat formato = new SimpleDateFormat("dd/MM/yyyy HH:mm");
      formatodDate = formato.format(date);
