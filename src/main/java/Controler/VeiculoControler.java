@@ -27,7 +27,7 @@ public class VeiculoControler {
             veiculo.setMotorizacao(motorizacao);
             veiculo.setCombustivel(combustivel);
             veiculo.setQuilometragem(quilometragem);
-            veiculo.cadastrarVeiculos(veiculo);
+            veiculo.cadastrarVeiculo(veiculo);
         return true;
         }
         return false;

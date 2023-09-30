@@ -1,0 +1,31 @@
+java
+import org.apache.poi.ss.usermodel.*;
+
+public class ExcelImporter {
+    public static void main(String[] args) {
+        try {
+            // Carrega o arquivo do Excel
+            Workbook workbook = WorkbookFactory.create(new File("caminho/do/arquivo.xlsx"));
+
+            // Obtém a primeira planilha do arquivo
+            Sheet sheet = workbook.getSheetAt(0);
+
+            // Itera pelas linhas da planilha
+            for (Row row : sheet) {
+                // Itera pelas células de cada linha
+                for (Cell cell : row) {
+                    // Obtém o valor da célula como uma String
+                    String cellValue = cell.getStringCellValue();
+                    System.out.println(cellValue);
+                }
+            }
+
+            // Fecha o arquivo do Excel
+            workbook.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+

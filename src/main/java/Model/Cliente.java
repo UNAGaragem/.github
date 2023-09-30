@@ -4,32 +4,54 @@
  */
 package Model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author sudar
  */
 public class Cliente {
     
-    private String codCliente;
+    
     private String nome;
     private String cpf_cnpj;
     private String endereco;
     private String complemento;
     private String bairro;
-    private String cep;
+    private int cep;
     private String cidade;
     private String estado;
     private String email;
-    private String telefone;
+    private int telefone;
 
-    public String getCodCliente() {
-        return codCliente;
+    
+     //Declaração Array List
+    ArrayList<Cliente> ListaCli;
+
+    
+     public Cliente () { //Declaração ArrayList no 1ºconstrutor Array List
+        ListaCli = new ArrayList();
+
+    }
+    
+    public Cliente(String nome, String cpf_cnpj, String endereco, String complemento, 
+            String bairro, int cep, String cidade, String estado, String email, int telefone) {
+       // this.codCliente = codCliente;
+        this.nome = nome;
+        this.cpf_cnpj = cpf_cnpj;
+        this.endereco = endereco;
+        this.complemento = complemento;
+        this.bairro = bairro;
+        this.cep = cep;
+        this.cidade = cidade;
+        this.estado = estado;
+        this.email = email;
+        this.telefone = telefone;
+         //Declaração ArrayList no 2ºconstrutor Array List
+        ListaCli = new ArrayList();
     }
 
-    public void setCodCliente(String codCliente) {
-        this.codCliente = codCliente;
-    }
-
+    
     public String getNome() {
         return nome;
     }
@@ -70,11 +92,11 @@ public class Cliente {
         this.bairro = bairro;
     }
 
-    public String getCep() {
+    public int getCep() {
         return cep;
     }
 
-    public void setCep(String cep) {
+    public void setCep(int cep) {
         this.cep = cep;
     }
 
@@ -102,20 +124,29 @@ public class Cliente {
         this.email = email;
     }
 
-    public String getTelefone() {
+    public int getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(String telefone) {
+    public void setTelefone(int telefone) {
         this.telefone = telefone;
     }
 
-    
-    
-
-     public void cadastrarCliente(Cliente cliente){
+    public void cadastrarCliente(Cliente cliente){
     
    }
    
+          //Metodo reconhecimento CLientes
+    public ArrayList<Cliente> getListaCli() {
+        return ListaCli;
+    }
+
+    public void setListaCli(ArrayList<Cliente> ListaCli) {
+        this.ListaCli = ListaCli;
+    }
+      //Metodo de inclusão especifico produto para inclusão na lista
+      public void addCli (Cliente Ci){
+             ListaCli.add(Ci);
+      }
     
 }

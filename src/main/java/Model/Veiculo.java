@@ -18,7 +18,26 @@ public class Veiculo {
     private String motorizacao;
     private String combustivel;
     private String quilometragem;
-    private ArrayList<Veiculo> itens = new ArrayList <Veiculo> ();
+     //Declaração Array List
+    ArrayList<Veiculo> ListaVec;
+    
+    
+   public Veiculo () { //Declaração ArrayList no 1ºconstrutor Array List
+        ListaVec = new ArrayList();
+    }
+
+    public Veiculo(String placa, String modelo, String ano, String motorizacao,
+            String combustivel, String quilometragem){ 
+        this.placa = placa;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.motorizacao = motorizacao;
+        this.combustivel = combustivel;
+        this.quilometragem = quilometragem;
+           
+         //Declaração ArrayList no 2ºconstrutor Array List
+        ListaVec = new ArrayList();
+    }
 
     public String getPlaca() {
         return placa;
@@ -67,17 +86,21 @@ public class Veiculo {
     public void setQuilometragem(String quilometragem) {
         this.quilometragem = quilometragem;
     }
-
-    
-    public ArrayList<Veiculo> getItens() {
-        return itens;
+       //Metodo reconhecimento Veiculos
+    public ArrayList<Veiculo> getListaVec() {
+        return ListaVec;
     }
 
-    public void setItens(ArrayList<Veiculo> itens) {
-        this.itens = itens;
+    public void setListaVec(ArrayList<Veiculo> ListaVec) {
+        this.ListaVec = ListaVec;
     }
-
-    public void cadastrarVeiculos(Veiculo veiculo){
+   
+    public void cadastrarVeiculo(Veiculo veiculo){
     
    }
+   
+        //Metodo de inclusão especifico produto para inclusão na lista
+    public void addVec (Veiculo Vc){
+             ListaVec.add(Vc);
+      }
 }

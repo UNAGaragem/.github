@@ -12,7 +12,7 @@ package projunagaragem;
 
     public static void main(String[] args) {
         
-         View.Login Login = new View.Login();
+         View.LoginView Login = new View.LoginView();
          Login.setVisible(true);
        
     }

@@ -12,14 +12,14 @@ import Model.Produto;
  */
 public class ProdutoControler {
     
-    public boolean CadastrarProduto(String codProduto,String aplicacaoProduto,String descricaoProduto, String qtdeProduto, 
-           String precoProduto) {
+    public boolean CadastrarProduto(int codProduto,String aplicacaoProduto,String descricaoProduto, int qtdeProduto, 
+           double precoProduto) {
         
-        if(codProduto != null && codProduto.length()>0 &&
+        if(codProduto>0 &&
            aplicacaoProduto != null && aplicacaoProduto.length()>0 &&
            descricaoProduto != null && descricaoProduto.length()>0 && 
-           qtdeProduto != null && qtdeProduto.length()>0 &&
-           precoProduto != null && precoProduto.length()>0){
+           qtdeProduto>0 &&
+           precoProduto>0){
            
            
             Produto produto = new Produto();

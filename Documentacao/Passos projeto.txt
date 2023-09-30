@@ -1,0 +1,22 @@
+Fala pessoal, beleza.
+
+Segue planejamento de evolução do Projeto Una Garagem:
+
+1º Idealização / Tema.
+2º Construção do esqueleto / Telas.
+3º Carregamento dos cadastros Veiculo, Cliente, Produto, Departamento.
+3.1º Alimentação.
+3.2º Gravar.
+3.3º Consultar.
+3.4º Alterar.
+3.5º Deletar.
+4º Relacionamentos:
+4.1º Tela Orçamento com Produto.
+4.2º Recepcionista com Ordem de Serviço.
+4.3º Lider de Oficina com Ordem de Serviço.
+4.3º Departamentos Oficina com Ordem de Serviço.
+4.4º Caixa com Ordem de Serviço. 
+5º Ajustes finais, Testes e Entrega.
+
+Em negrito passos ja executados.
+Bora colocar foco nas execuções, juntos.
