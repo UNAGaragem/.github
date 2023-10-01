@@ -2,10 +2,10 @@ Fala pessoal, beleza.
 
 Segue planejamento de evolução do Projeto Una Garagem:
 
-1º Idealização / Tema.
-2º Construção do esqueleto / Telas.
-3º Carregamento dos cadastros Veiculo, Cliente, Produto, Departamento.
-3.1º Alimentação.
+*1º Idealização / Tema.*
+*2º Construção do esqueleto / Telas.*
+*3º Carregamento dos cadastros Veiculo, Cliente, Produto*, Departamento.
+*3.1º*Alimentação.*
 3.2º Gravar.
 3.3º Consultar.
 3.4º Alterar.
