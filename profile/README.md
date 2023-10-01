@@ -9,12 +9,23 @@ O projeto pode ser útil para auxiliar no controle e controle do escritório em 
 
 O sistema será desenvolvido em JAVA.
 
-Os responsáveis ​​pelo projeto são:
+Equipe de projeto são:
 
-Sudário -sudarioogoncalves@gmail.com ; Edinilson - edmonteirocury@gmail.com ; Edileuza - edileuzacruz489@gmail.com ; Rafael - nrafael832@gmail.com ; Gabriel - bilgabriel124@gmail.com ; Gustavo - gustavo.enmeriki@gmail.com ; Reginaldo - reginaldomc@hotmail.com ; Marcelo - marcelogoncalves0222@gmail.com .
+Product Owner - Edinilson - edmonteirocury@gmail.com;
+Scrum Master - Sudário -sudarioogoncalves@gmail.com; 
+
+Desenvolvedores:
+Edileuza - edileuzacruz489@gmail.com; 
+Rafael - nrafael832@gmail.com; 
+Gabriel - bilgabriel124@gmail.com; 
+Gustavo - gustavo.enmeriki@gmail.com; 
+Reginaldo - reginaldomc@hotmail.com; 
+Marcelo - marcelogoncalves0222@gmail.com.
 
 Curso: Tecnólogo em Análise e Desenvolvimento de Sistema - UNA - Contagem /2023-02
 
 Os orientadores são os professores
-
-Edyene Cely Amaro Oliveira - Qualidade de Software; Érica Oliveira - Engenharia de Software; Julio Vilela - Engenharia de Software; Rafaela Moreira - Qualidade de Software.
+Edyene Cely Amaro Oliveira - Qualidade de Software; 
+Érica Oliveira - Engenharia de Software;
+Julio Vilela - Engenharia de Software; 
+Rafaela Moreira - Qualidade de Software.
