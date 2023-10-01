@@ -9,7 +9,7 @@ O projeto pode ser útil para auxiliar no controle e controle do escritório em 
 
 O sistema será desenvolvido em JAVA.
 
-Equipe de projeto são:
+Equipe de projeto:
 
 Product Owner - Edinilson - edmonteirocury@gmail.com;
 Scrum Master - Sudário -sudarioogoncalves@gmail.com; 
@@ -24,8 +24,8 @@ Marcelo - marcelogoncalves0222@gmail.com.
 
 Curso: Tecnólogo em Análise e Desenvolvimento de Sistema - UNA - Contagem /2023-02
 
-Os orientadores são os professores
-Edyene Cely Amaro Oliveira - Qualidade de Software; 
+Os orientadores são os professores:
+Edyene C. A. Oliveira - Qualidade de Software; 
 Érica Oliveira - Engenharia de Software;
 Julio Vilela - Engenharia de Software; 
 Rafaela Moreira - Qualidade de Software.
