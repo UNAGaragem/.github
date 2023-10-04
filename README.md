@@ -11,9 +11,11 @@ O sistema será desenvolvido em JAVA.
 
 Equipe de projeto:
 
-Product Owner - Edinilson - edmonteirocury@gmail.com ; Scrum Master - Sudário -sudarioogoncalves@gmail.com ;
+Product Owner - Edinilson - edmonteirocury@gmail.com / Marcelo - marcelogoncalves0222@gmail.com .
 
-Desenvolvedores: Edileuza - edileuzacruz489@gmail.com ; Rafael - nrafael832@gmail.com ; Gabriel - bilgabriel124@gmail.com ; Gustavo - gustavo.enmeriki@gmail.com ; Reginaldo - reginaldomc@hotmail.com ; Marcelo - marcelogoncalves0222@gmail.com .
+Scrum Master - Sudário -sudarioogoncalves@gmail.com ;
+
+Desenvolvedores: Edileuza - edileuzacruz489@gmail.com ; Rafael - nrafael832@gmail.com ; Gabriel - bilgabriel124@gmail.com ; Gustavo - gustavo.enmeriki@gmail.com ; Reginaldo - reginaldomc@hotmail.com.
 
 Curso: Tecnólogo em Análise e Desenvolvimento de Sistema - UNA - Contagem /2023-02
 
