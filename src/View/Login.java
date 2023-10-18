@@ -86,7 +86,7 @@ public class Login extends javax.swing.JFrame {
         );
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\sudar\\OneDrive\\Área de Trabalho\\oficina1.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/oficina1.jpg"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
         jLabel2.setText("CENTRO AUTOMOTIVO");
