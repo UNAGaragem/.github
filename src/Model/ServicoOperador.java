@@ -12,14 +12,16 @@ public class ServicoOperador {
     
     private String departamento;
     private String nomeOperador;
+    private String codigo;
     private String descricaoServico;
     private String modeloAplicacao;
     private String tempoExecucao;
 
-    public ServicoOperador(String departamento, String nomeOperador, String descricaoServico, String modeloAplicacao,
-            String tempoExecucao) {
+    public ServicoOperador(String departamento, String nomeOperador, String codigo, String descricaoServico,
+            String modeloAplicacao, String tempoExecucao) {
         this.departamento = departamento;
         this.nomeOperador = nomeOperador;
+        this.codigo = codigo;
         this.descricaoServico = descricaoServico;
         this.modeloAplicacao = modeloAplicacao;
         this.tempoExecucao = tempoExecucao;
@@ -39,6 +41,14 @@ public class ServicoOperador {
 
     public void setNomeOperador(String nomeOperador) {
         this.nomeOperador = nomeOperador;
+    }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
     public String getDescricaoServico() {
@@ -66,4 +76,6 @@ public class ServicoOperador {
     }
 
     
-}
+    }
+
+   
