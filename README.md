@@ -11,12 +11,14 @@ O sistema será desenvolvido em JAVA.
 
 Equipe de projeto:
 
-Product Owner - Edinilson - edmonteirocury@gmail.com / Marcelo - marcelogoncalves0222@gmail.com .
+Product Owner - Ednilson - edmonteirocury@gmail.com / Marcelo - marcelogoncalves0222@gmail.com .
 
 Scrum Master - Sudário -sudarioogoncalves@gmail.com ;
 
 Desenvolvedores: Edileuza - edileuzacruz489@gmail.com ; Rafael - nrafael832@gmail.com ; Gabriel - bilgabriel124@gmail.com ; Gustavo - gustavo.enmeriki@gmail.com ; Reginaldo - reginaldomc@hotmail.com.
 
 Curso: Tecnólogo em Análise e Desenvolvimento de Sistema - UNA - Contagem /2023-02
+
+Direitos reservados à equipe de projeto.
 
 Os orientadores são os professores: Edyene CA Oliveira - Qualidade de Software; Érica Oliveira - Engenharia de Software; Julio Vilela - Engenharia de Software; Rafaela Moreira - Qualidade de Software.
