@@ -115,5 +115,7 @@ public class Cliente {
         this.telefone = telefone;
     }
     
-    
+     public void cadastraCliente(String cpf_cnpj) {
+        
+    }
 }

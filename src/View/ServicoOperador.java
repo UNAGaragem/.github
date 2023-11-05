@@ -212,7 +212,7 @@ public class ServicoOperador extends javax.swing.JFrame {
         jLabel1.setText("CADASTRO DE SERVIÇO OPERADOR");
 
         jTextField6.setEditable(false);
-        jTextField6.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
+        jTextField6.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -253,7 +253,7 @@ public class ServicoOperador extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel2.setText("Descrição do Serviço:");
 
-        jTextField1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -263,7 +263,7 @@ public class ServicoOperador extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel3.setText("Tempo de Execução:");
 
-        jTextField2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -273,7 +273,7 @@ public class ServicoOperador extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel4.setText("Departamento:");
 
-        jComboBox1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jComboBox1.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione departamento", "Mecânica", "Suspensão", "Eletrica", "Funilaria e Pintura" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -284,7 +284,7 @@ public class ServicoOperador extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel5.setText("Nome Operador: ");
 
-        jTextField3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jTextField3.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
@@ -294,7 +294,7 @@ public class ServicoOperador extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel6.setText("Modelo:");
 
-        jComboBox2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jComboBox2.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione modelo", "Fiat", "Gm", "Vw", "Ford", "Toyota", "Hyundai", "Cherry", "Mitisubishi" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -321,7 +321,7 @@ public class ServicoOperador extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel7.setText("Codigo Operação:");
 
-        jTextField5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jTextField5.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

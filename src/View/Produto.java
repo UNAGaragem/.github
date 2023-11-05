@@ -194,7 +194,7 @@ public class Produto extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel1.setText("Codigo Produto:");
 
-        jTextField1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -208,14 +208,14 @@ public class Produto extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel3.setText("Modelo de Aplicação:");
 
-        jTextField2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
 
-        jComboBox1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jComboBox1.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione modelo", "Fiat", "Gm", "Vw", "Ford", "Toyota", "Hyundai", "Cherry", "Mitisubishi" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -226,12 +226,12 @@ public class Produto extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel4.setText("Quantidade:");
 
-        jTextField3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jTextField3.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel5.setText("Valor Unitário:");
 
-        jTextField4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+        jTextField4.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
@@ -420,7 +420,7 @@ public class Produto extends javax.swing.JFrame {
         jLabel6.setText("CADASTRO DE PRODUTOS");
 
         jTextField5.setEditable(false);
-        jTextField5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jTextField5.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);

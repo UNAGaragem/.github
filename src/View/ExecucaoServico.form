@@ -37,11 +37,8 @@
                           <Group type="102" attributes="0">
                               <Component id="jPanel1" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jTextField47" pref="88" max="32767" attributes="0"/>
-                                  <Component id="jButton2" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="jTextField47" min="-2" pref="32" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
@@ -167,9 +164,7 @@
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                       <Component id="jTextField47" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
@@ -178,8 +173,8 @@
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel3" min="-2" pref="214" max="-2" attributes="0"/>
-              <EmptySpace pref="43" max="32767" attributes="0"/>
+              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="45" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -217,7 +212,7 @@
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+          <Font name="Arial Narrow" size="13" style="0"/>
         </Property>
       </Properties>
       <Events>
@@ -236,6 +231,9 @@
     <Component class="javax.swing.JTextField" name="jTextField10">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial Narrow" size="13" style="0"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
@@ -250,7 +248,7 @@
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+          <Font name="Arial Narrow" size="13" style="0"/>
         </Property>
       </Properties>
     </Component>
@@ -266,7 +264,7 @@
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+          <Font name="Arial Narrow" size="13" style="0"/>
         </Property>
       </Properties>
       <Events>
@@ -285,7 +283,7 @@
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+          <Font name="Arial Narrow" size="13" style="0"/>
         </Property>
       </Properties>
       <Events>
@@ -304,7 +302,7 @@
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+          <Font name="Arial Narrow" size="13" style="0"/>
         </Property>
       </Properties>
       <Events>
@@ -323,7 +321,7 @@
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+          <Font name="Arial Narrow" size="13" style="0"/>
         </Property>
       </Properties>
       <Events>
@@ -342,7 +340,7 @@
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+          <Font name="Arial Narrow" size="13" style="0"/>
         </Property>
       </Properties>
     </Component>
@@ -473,7 +471,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Rounded MT Bold" size="13" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Item em Servi&#xe7;o 1:"/>
+            <Property name="text" type="java.lang.String" value="Servi&#xe7;o 1:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField3">
@@ -506,7 +504,7 @@
         <Component class="javax.swing.JTextField" name="jTextField4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -516,15 +514,14 @@
         <Component class="javax.swing.JTextField" name="jTextField5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField18">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -533,9 +530,8 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField17">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -545,7 +541,7 @@
         <Component class="javax.swing.JTextField" name="jTextField7">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -555,7 +551,7 @@
         <Component class="javax.swing.JTextField" name="jTextField8">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -564,9 +560,8 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField19">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -575,9 +570,8 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField21">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -602,25 +596,22 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField36">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField37">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField42">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
@@ -629,7 +620,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Rounded MT Bold" size="13" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Total Item 1:"/>
+            <Property name="text" type="java.lang.String" value="Total Servi&#xe7;o 1:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel25">
@@ -637,13 +628,14 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Rounded MT Bold" size="13" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Situa&#xe7;&#xe3;o Servi&#xe7;o:"/>
+            <Property name="text" type="java.lang.String" value="Status Servi&#xe7;o 1:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="jComboBox1">
           <Properties>
+            <Property name="editable" type="boolean" value="true"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="5">
@@ -672,9 +664,8 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField45">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
@@ -740,7 +731,7 @@
                               <Component id="jTextField46" min="-2" pref="88" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="130" max="32767" attributes="0"/>
+                      <EmptySpace pref="219" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -810,7 +801,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Rounded MT Bold" size="13" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Item em Servi&#xe7;o 2:"/>
+                <Property name="text" type="java.lang.String" value="Servi&#xe7;o 2:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField23">
@@ -843,22 +834,21 @@
             <Component class="javax.swing.JTextField" name="jTextField24">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField25">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField28">
               <Properties>
-                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
               <Events>
@@ -867,9 +857,8 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField29">
               <Properties>
-                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
               <Events>
@@ -879,7 +868,7 @@
             <Component class="javax.swing.JTextField" name="jTextField30">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
               <Events>
@@ -889,7 +878,7 @@
             <Component class="javax.swing.JTextField" name="jTextField31">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
               <Events>
@@ -898,9 +887,8 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField33">
               <Properties>
-                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
               <Events>
@@ -909,9 +897,8 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField34">
               <Properties>
-                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
               <Events>
@@ -928,9 +915,8 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField39">
               <Properties>
-                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
             </Component>
@@ -944,9 +930,8 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField43">
               <Properties>
-                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
             </Component>
@@ -955,14 +940,13 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Rounded MT Bold" size="13" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Total Item 2:"/>
+                <Property name="text" type="java.lang.String" value="Total Servi&#xe7;o 2:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField38">
               <Properties>
-                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
             </Component>
@@ -971,13 +955,14 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Rounded MT Bold" size="13" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Situa&#xe7;&#xe3;o Servi&#xe7;o:"/>
+                <Property name="text" type="java.lang.String" value="Status Servi&#xe7;o 2:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JComboBox" name="jComboBox2">
               <Properties>
+                <Property name="editable" type="boolean" value="true"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="5">
@@ -998,9 +983,8 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField46">
               <Properties>
-                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+                  <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
               </Properties>
             </Component>
@@ -1028,7 +1012,7 @@
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+          <Font name="Arial Narrow" size="13" style="0"/>
         </Property>
       </Properties>
       <Events>
@@ -1050,78 +1034,81 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="jTextField32" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jTextField27" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jLabel30" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jTextField48" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
-                                      <Component id="jTextField35" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                              <Component id="jTextField50" alignment="1" pref="109" max="32767" attributes="0"/>
-                                              <Component id="jTextField49" alignment="1" max="32767" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="jTextField52" alignment="1" pref="198" max="32767" attributes="0"/>
-                                              <Component id="jTextField51" alignment="1" max="32767" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel34" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField26" min="-2" pref="574" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabel29" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jTextField26" min="-2" pref="574" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel36" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jComboBox3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jTextField32" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jTextField27" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jLabel30" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jTextField48" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
+                              <Component id="jTextField35" alignment="1" min="-2" pref="200" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                                  <Component id="jComboBox3" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField57" min="-2" pref="88" max="-2" attributes="0"/>
+                              <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jTextField50" alignment="1" pref="109" max="32767" attributes="0"/>
+                                      <Component id="jTextField49" alignment="1" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jTextField52" alignment="1" pref="198" max="32767" attributes="0"/>
+                                      <Component id="jTextField51" alignment="1" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel33" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel34" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          <Component id="jLabel37" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jTextField57" min="-2" pref="88" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jTextField44" alignment="0" min="-2" pref="103" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jTextField56" pref="103" max="32767" attributes="0"/>
                                   <Component id="jTextField53" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jTextField54" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jTextField44" min="-2" pref="101" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="234" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jButton4" pref="129" max="32767" attributes="0"/>
+                                  <Component id="jButton1" max="32767" attributes="0"/>
+                                  <Component id="jButton3" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" pref="101" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="512" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1129,21 +1116,17 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField57" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField26" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel36" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel29" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextField26" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel36" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jComboBox3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel37" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextField57" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel30" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel31" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1169,32 +1152,39 @@
                               <Component id="jTextField56" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel32" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField53" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel32" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jTextField53" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jTextField54" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel34" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jButton2" min="-2" pref="23" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jTextField44" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jButton1" min="-2" pref="22" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="7" max="32767" attributes="0"/>
                       </Group>
                   </Group>
+                  <Component id="jButton1" min="-2" pref="22" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1205,7 +1195,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Rounded MT Bold" size="13" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Item em Servi&#xe7;o 3:"/>
+            <Property name="text" type="java.lang.String" value="Servi&#xe7;o 3:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField26">
@@ -1238,22 +1228,21 @@
         <Component class="javax.swing.JTextField" name="jTextField27">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField32">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField35">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -1262,9 +1251,8 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField48">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -1274,7 +1262,7 @@
         <Component class="javax.swing.JTextField" name="jTextField49">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -1284,7 +1272,7 @@
         <Component class="javax.swing.JTextField" name="jTextField50">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -1293,9 +1281,8 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField51">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -1304,9 +1291,8 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField52">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
           <Events>
@@ -1323,9 +1309,8 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField53">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
@@ -1339,9 +1324,8 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField54">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
@@ -1350,14 +1334,13 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Rounded MT Bold" size="13" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Total Item 3:"/>
+            <Property name="text" type="java.lang.String" value="Total Servi&#xe7;o 3:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField56">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
@@ -1366,13 +1349,14 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Rounded MT Bold" size="13" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Situa&#xe7;&#xe3;o Servi&#xe7;o:"/>
+            <Property name="text" type="java.lang.String" value="Status Servi&#xe7;o 3:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="jComboBox3">
           <Properties>
+            <Property name="editable" type="boolean" value="true"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="5">
@@ -1393,9 +1377,8 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField57">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
@@ -1417,21 +1400,53 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField44">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+              <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Rounded MT Bold" size="14" style="0"/>
+              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Voltar"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Salvar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Alterar"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Buscar Servi&#xe7;o"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -1440,17 +1455,9 @@
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Arial Rounded MT Bold" size="13" style="0"/>
+          <Font name="Arial Narrow" size="13" style="0"/>
         </Property>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Buscar"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField47">
       <Properties>

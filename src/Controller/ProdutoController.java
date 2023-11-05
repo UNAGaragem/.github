@@ -8,6 +8,14 @@ package Controller;
  *
  * @author sudar
  */
-public class OrdemDeServico {
-    
+public class ProdutoController {
+
+    public boolean cadastrarProduto() {
+
+        return true;
+    }
+
+
+return false;
+}
 }

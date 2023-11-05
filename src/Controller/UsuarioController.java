@@ -8,6 +8,14 @@ package Controller;
  *
  * @author sudar
  */
-public class Orcamento {
-    
+public class UsuarioController {
+
+    public boolean salvarUsuario() {
+
+        return true;
+    }
+
+
+return false;
+}
 }

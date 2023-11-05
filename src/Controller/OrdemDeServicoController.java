@@ -8,6 +8,13 @@ package Controller;
  *
  * @author sudar
  */
-public class ExecucaoServico {
-    
+public class OrdemDeServicoController {
+
+    public boolean salvarOrdemDeServico() {
+
+        return true;
+    }
+
+return false;
+}
 }

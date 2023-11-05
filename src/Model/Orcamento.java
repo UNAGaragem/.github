@@ -9,7 +9,8 @@ package Model;
  * @author sudar
  */
 public class Orcamento {
-   private String codigo;
+
+    private String codigo;
     private String descricao;
     private String modeloAplicacao;
     private String qtde;
@@ -26,8 +27,7 @@ public class Orcamento {
     public String getCodigo() {
         return codigo;
     }
-    
-    
+
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
@@ -63,6 +63,8 @@ public class Orcamento {
     public void setValor(String valor) {
         this.valor = valor;
     }
-    
-    
+
+    public void salvarOrcamento(String cpf_cnpj) {
+
+    }
 }

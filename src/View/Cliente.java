@@ -219,7 +219,7 @@ public class Cliente extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel2.setText("Cpf_Cnpj:");
 
-        jTextField1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -235,7 +235,7 @@ public class Cliente extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel3.setText("Nome:");
 
-        jTextField2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -245,7 +245,7 @@ public class Cliente extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel4.setText("Endereço:");
 
-        jTextField3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
+        jTextField3.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
@@ -255,7 +255,7 @@ public class Cliente extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel5.setText("Complemento:");
 
-        jTextField4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
+        jTextField4.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
@@ -265,7 +265,7 @@ public class Cliente extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel6.setText("Bairro:");
 
-        jTextField5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
+        jTextField5.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField5ActionPerformed(evt);
@@ -275,10 +275,12 @@ public class Cliente extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel7.setText("Cidade:");
 
+        jTextField6.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
+
         jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel8.setText("Cep:");
 
-        jTextField7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
+        jTextField7.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField7ActionPerformed(evt);
@@ -288,17 +290,17 @@ public class Cliente extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel9.setText("Estado:");
 
-        jTextField8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
+        jTextField8.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         jLabel10.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel10.setText("Email:");
 
-        jTextField9.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
+        jTextField9.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         jLabel11.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel11.setText("Telefone:");
 
-        jTextField10.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
+        jTextField10.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField10ActionPerformed(evt);
@@ -530,7 +532,7 @@ public class Cliente extends javax.swing.JFrame {
         jLabel1.setText("CADASTRO CLIENTE");
 
         jTextField11.setEditable(false);
-        jTextField11.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jTextField11.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

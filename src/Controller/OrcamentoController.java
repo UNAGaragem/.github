@@ -8,6 +8,14 @@ package Controller;
  *
  * @author sudar
  */
-public class CadastroProduto {
+public class OrcamentoController {
+
+    public boolean salvarExecucaoServico() {
+
+        return true;
+    }
+
+return false;
+}
     
 }

@@ -9,7 +9,7 @@ package Model;
  * @author sudar
  */
 public class Veiculo {
-    
+
     private String placa;
     private String modelo;
     private String anoFabricacao;
@@ -74,8 +74,9 @@ public class Veiculo {
     public void setQuilometragem(String quilometragem) {
         this.quilometragem = quilometragem;
     }
-    
-    
-    
-}
 
+    public void cadastraVeiculo(String cpf_cnpj) {
+
+    }
+
+}

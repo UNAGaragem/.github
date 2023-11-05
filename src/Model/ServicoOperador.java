@@ -9,7 +9,7 @@ package Model;
  * @author sudar
  */
 public class ServicoOperador {
-    
+
     private String departamento;
     private String nomeOperador;
     private String codigo;
@@ -75,7 +75,7 @@ public class ServicoOperador {
         this.tempoExecucao = tempoExecucao;
     }
 
-    
-    }
+    public void cadastraServicoOperador(String cpf_cnpj) {
 
-   
+    }
+}

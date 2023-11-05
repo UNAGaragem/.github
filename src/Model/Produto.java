@@ -9,7 +9,7 @@ package Model;
  * @author sudar
  */
 public class Produto {
-    
+
     private String codigo;
     private String descricao;
     private String modeloAplicacao;
@@ -63,7 +63,9 @@ public class Produto {
     public void setValor(String valor) {
         this.valor = valor;
     }
-    
-    
-       
+
+    public void cadastraProduto(String cpf_cnpj) {
+
+    }
+
 }

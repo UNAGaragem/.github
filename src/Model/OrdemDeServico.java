@@ -74,6 +74,8 @@ public class OrdemDeServico {
         this.valorTotal = valorTotal;
     }
     
-    
+     public void salvarOrdemDeServico(String cpf_cnpj) {
+        
+    }
     
 }
