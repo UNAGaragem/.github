@@ -4,15 +4,21 @@
  */
 package Controller;
 
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import Model.Login;
+import DalConnection.ModuloConexao;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 /**
  *
  * @author sudar
  */
-public class Login {
+public class LoginController {
     
     public String AtualizarCampoData(){
      

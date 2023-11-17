@@ -35,7 +35,7 @@ public class Login extends javax.swing.JFrame {
         initComponents();
        
         // O metodo data foi incluido dentro do Controller
-        Controller.Login ctrLogin = new Controller.Login();
+        Controller.LoginController ctrLogin = new Controller.LoginController();
          jTextField3.setText(ctrLogin.AtualizarCampoData());
          jTextField1.grabFocus();
          
@@ -220,7 +220,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Arial Narrow", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Arial Narrow", 1, 12)); // NOI18N
         jLabel6.setText("Equipe responsável:");
 
         jLabel7.setFont(new java.awt.Font("Arial Narrow", 0, 12)); // NOI18N
@@ -236,7 +236,7 @@ public class Login extends javax.swing.JFrame {
         jLabel10.setText("Rafael Nogueira, Gabriel Arthur, ");
 
         jLabel11.setFont(new java.awt.Font("Arial Narrow", 0, 12)); // NOI18N
-        jLabel11.setText("Reginaldo Martins, Gustavo");
+        jLabel11.setText("Reginaldo Martins, Gustavo Enmerick");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -307,7 +307,7 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         
-        Controller.Login login = new Controller.Login();
+        Controller.LoginController login = new Controller.LoginController();
             String msgErro = login.ValidarLogin(jTextField1.getText(), jPasswordField1.getText(), contadorLoginErrado);
            if(msgErro != "")
            {

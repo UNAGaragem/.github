@@ -19,7 +19,7 @@ public class TelaInicial extends javax.swing.JFrame {
      */
     public TelaInicial() {
         initComponents();
-         Controller.Login ctrLogin = new Controller.Login();
+         Controller.LoginController ctrLogin = new Controller.LoginController();
          jTextField1.setText(ctrLogin.AtualizarCampoData());
          
         }
@@ -87,7 +87,7 @@ public class TelaInicial extends javax.swing.JFrame {
         });
 
         jButton7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jButton7.setText("Cadastro de Mão de Obra ");
+        jButton7.setText("Cadastro de Serviço / Operador");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -119,7 +119,7 @@ public class TelaInicial extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jButton2.setText("Cadastro Veiculo");
+        jButton2.setText("Cadastro Veículo");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);

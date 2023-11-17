@@ -4,9 +4,9 @@
  */
 package Test;
 
-import Controller.Login;
+import Controller.LoginController;
 import io.cucumber.java.pt.Dado;
-import io.cucumber.java.pt.Quando;
+//import io.cucumber.java.pt.Quando;
 import io.cucumber.java.pt.*;
 import org.junit.Assert;
 /**
@@ -16,12 +16,12 @@ import org.junit.Assert;
 
 public class LoginSteps {
     
-    private Login c;
+    private LoginController c;
     private String result;
     
     @Dado("buscando data atualizada das telas do sistema")
     public void test1(){
-        c = new Login();
+        c = new LoginController();
        result = c.AtualizarCampoData();
           
     }
@@ -33,7 +33,7 @@ public class LoginSteps {
     
     public void ValidarLogin(String usuario, String senha, int contadorLoginErrado) {   
  
-            c = new Login();
+            c = new LoginController();
        result = c.ValidarLogin(usuario, senha, contadorLoginErrado);
         
     }   
@@ -45,7 +45,7 @@ public class LoginSteps {
 
      public void BuscarPermissaoDeAcesso(String usuario, String senha)
      {               
-         c = new Login();
+         c = new LoginController();
         result = c.BuscarPermissaoDeAcesso(usuario, senha);
       
      }  

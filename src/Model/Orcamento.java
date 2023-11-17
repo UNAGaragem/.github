@@ -10,28 +10,21 @@ package Model;
  */
 public class Orcamento {
 
-    private String codigo;
+   // private String codigo;
     private String descricao;
     private String modeloAplicacao;
     private String qtde;
     private String valor;
 
-    public Orcamento(String codigo, String descricao, String modeloAplicacao, String qtde, String valor) {
-        this.codigo = codigo;
+    public Orcamento(String modeloAplicacao, String descricao) {
+       // this.codigo = codigo;
         this.descricao = descricao;
         this.modeloAplicacao = modeloAplicacao;
         this.qtde = qtde;
         this.valor = valor;
     }
 
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
-    }
-
+   
     public String getDescricao() {
         return descricao;
     }
@@ -66,5 +59,9 @@ public class Orcamento {
 
     public void salvarOrcamento(String cpf_cnpj) {
 
+    }
+    
+    public String retornarOi(){
+        return "Oi";
     }
 }
