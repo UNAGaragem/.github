@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package View;
+
 import DalConnection.ModuloConexao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,13 +12,14 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
+
 /**
  *
  * @author sudar
  */
 public class OrdemDeServico extends javax.swing.JFrame {
-    
-    Connection conexao = null; 
+
+    Connection conexao = null;
     PreparedStatement pat = null;
     ResultSet rs = null;
     int contadorLoginErrado = 0;
@@ -26,57 +28,53 @@ public class OrdemDeServico extends javax.swing.JFrame {
      * Creates new form OrdemDeServico1
      */
     public OrdemDeServico() {
-         initComponents();
-         Controller.LoginController ctrLogin = new Controller.LoginController();
-         jTextField20.setText(ctrLogin.AtualizarCampoData());
-         conexao = ModuloConexao.conector();
-         jTextField1.setText(String.valueOf(GerarIdentificadorOs()));
-         jTextField2.grabFocus();
-         
-        
+        initComponents();
+        Controller.LoginController ctrLogin = new Controller.LoginController();
+        jTextField20.setText(ctrLogin.AtualizarCampoData());
+        conexao = ModuloConexao.conector();
+        jTextField1.setText(String.valueOf(GerarIdentificadorOs()));
+        jTextField2.grabFocus();
+
     }
 
     private int GerarIdentificadorOs() {
-        
-      //   Controller.OrdemDeServicoController obj = new Controller.OrdemDeServicoController();
-     //   obj.GerarIdentificadorOS();
-        
-         int numeroOs = 230001;
-         
+
+        int numeroOs = 230001;
+
         String sql = "select max(coalesce (numero_os, 0)) id_numeroos from ordemdeservicoab";
         //select case when max(id_numeroos is Null) = 0 then max(id_numeroos) end as id_numeroos from ordemservico
-        
+
         try {
             //Preparação e Passagem dos parametros    
             pat = conexao.prepareStatement(sql);
-           // pat.setString(1, placa);//variaveis condição de chamada
-                           
+            // pat.setString(1, placa);//variaveis condição de chamada
+
             rs = pat.executeQuery();
             //**Tratamento de exceções de "digitação" não foram considerado neste momento.  
             if (rs.next()) {
-              // JOptionPane.showInternalMessageDialog(null, rs.getString(1));
-                
-                if (rs.getString(1)!= null){
-                    numeroOs = Integer.parseInt(rs.getString(1))+1;
+                // JOptionPane.showInternalMessageDialog(null, rs.getString(1));
+
+                if (rs.getString(1) != null) {
+                    numeroOs = Integer.parseInt(rs.getString(1)) + 1;
                 }
-                    
+
             }
-                                           
+
         } catch (Exception e) {
             JOptionPane.showInternalMessageDialog(null, "Ocorreu um erro");
         }
-        return  numeroOs;
-     }
-     
-     private void buscarVeiculo(String placa) {
+        return numeroOs;
+    }
+
+    private void buscarVeiculo(String placa) {
 
         String sql = "select * from cadastroveiculo where placa=?";
-        
+
         try {
             //Preparação e Passagem dos parametros    
             pat = conexao.prepareStatement(sql);
             pat.setString(1, placa);//variaveis condição de chamada
-                           
+
             rs = pat.executeQuery();
             //**Tratamento de exceções de "digitação" não foram considerado neste momento.  
             if (rs.next()) {
@@ -86,28 +84,28 @@ public class OrdemDeServico extends javax.swing.JFrame {
                 jTextField4.setText(rs.getString(4));
                 jTextField5.setText(rs.getString(5));
                 jTextField6.setText(rs.getString(6));
-                             
+
             } else {
-                
-               JOptionPane.showInternalMessageDialog(null, "Placa não cadastrada ou campo não digitado");
-                
+
+                JOptionPane.showInternalMessageDialog(null, "Placa não cadastrada ou campo não digitado");
+
             }
         } catch (Exception e) {
-            
+
             JOptionPane.showInternalMessageDialog(null, e);
-           
+
         }
-     }
-     
-     private void buscarCliente(String cpf_cnpj) {
+    }
+
+    private void buscarCliente(String cpf_cnpj) {
 
         String sql = "select * from cadastrocliente where cpf_cnpj=?";
-        
+
         try {
             //Preparação e Passagem dos parametros    
             pat = conexao.prepareStatement(sql);
             pat.setString(1, cpf_cnpj);//variaveis condição de chamada
-                           
+
             rs = pat.executeQuery();
             //**Tratamento de exceções de "digitação" não foram considerado neste momento.  
             if (rs.next()) {
@@ -120,61 +118,57 @@ public class OrdemDeServico extends javax.swing.JFrame {
                 jTextField14.setText(rs.getString(7));
                 jTextField24.setText(rs.getString(8));
                 jTextField16.setText(rs.getString(9));
-               
-                                                
+
             } else {
 
                 JOptionPane.showInternalMessageDialog(null,
                         "Cliente não cadastrado ou campo não digitado");
-            
-              //  jTextField1.setText(null);
-              //  jTextField2.setText(null);
-              //  jComboBox1.setSelectedIndex(WIDTH);
-              //  jTextField3.setText(null);
-              //  jTextField4.setText(null);
+
+                //  jTextField1.setText(null);
+                //  jTextField2.setText(null);
+                //  jComboBox1.setSelectedIndex(WIDTH);
+                //  jTextField3.setText(null);
+                //  jTextField4.setText(null);
 //
             }
         } catch (Exception e) {
             JOptionPane.showInternalMessageDialog(null, e);
         }
-     }
-     
-            private void adicionar(){
+    }
+
+    private void adicionar() {
         String sql = "insert into ordemdeservicoab(numero_os,placa,quilometragem,cpf_cnpj,"
                 + "servico1,servico2,servico3,data_abertura,data_termino_servico,data_pagamento,data_entrega_veiculo) values(?,?,?,?,?,?,?,NOW(),Null,Null,Null)";
-     try {//Definindo o que vai do campo da tela para o campo respectivo do DB.
-        
-        pat = conexao.prepareStatement(sql);
-        
-        pat.setString(1,jTextField1.getText());
-        //pat.setString(2,BuscarDataAtualFormatoYYYYMMDDHHmm());  data_servico,placa
-       // pat.setString(2,jTextField25.getText());
-        pat.setString(2,jTextField2.getText());
-        pat.setString(3,jTextField7.getText());
-        pat.setString(4,jTextField9.getText());
-        pat.setString(5,jTextField18.getText());
-        pat.setString(6,jTextField17.getText());
-        pat.setString(7,jTextField26.getText());
-        pat.setString(8,jTextField21.getText());
-        pat.setString(9,jTextField22.getText());
-        pat.setString(10,jTextField23.getText());
-       //pat.setString(8,jTextField19.getText());
-        
-        
-        //pat.setString(10,jTextField19.getText());//NOW()termino_servico
-        //prever os campos aqui 
-       
-       // .getSelectedItem()
-                
-         //A linha abaixo atualiza a tabela
-         pat.executeUpdate();
-         
-         
-     }catch (Exception e) {
-         JOptionPane.showInternalMessageDialog(null, e);
-     }   
-              } 
-            
+        try {//Definindo o que vai do campo da tela para o campo respectivo do DB.
+
+            pat = conexao.prepareStatement(sql);
+
+            pat.setString(1, jTextField1.getText());
+            //pat.setString(2,BuscarDataAtualFormatoYYYYMMDDHHmm());  data_servico,placa
+            // pat.setString(2,jTextField25.getText());
+          //  pat.setString(2, jTextField25.getText());
+            pat.setString(2, jTextField2.getText());
+            pat.setString(3, jTextField7.getText());
+            pat.setString(4, jTextField9.getText());
+            pat.setString(5, jTextField18.getText());
+            pat.setString(6, jTextField17.getText());
+            pat.setString(7, jTextField26.getText());
+            //pat.setString(9, jTextField21.getText());
+            //pat.setString(10, jTextField22.getText());
+           // pat.setString(11, jTextField23.getText());
+            //pat.setString(8,jTextField19.getText());
+
+            //pat.setString(10,jTextField19.getText());//NOW()termino_servico
+            //prever os campos aqui 
+            // .getSelectedItem()
+            //A linha abaixo atualiza a tabela
+            pat.executeUpdate();
+
+        } catch (Exception e) {
+            JOptionPane.showInternalMessageDialog(null, e);
+        }
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -228,10 +222,8 @@ public class OrdemDeServico extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jTextField19 = new javax.swing.JTextField();
-        jLabel24 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jTextField26 = new javax.swing.JTextField();
-        jTextField28 = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
         jTextField21 = new javax.swing.JTextField();
         jLabel29 = new javax.swing.JLabel();
@@ -452,9 +444,6 @@ public class OrdemDeServico extends javax.swing.JFrame {
             }
         });
 
-        jLabel24.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
-        jLabel24.setText("Observação:");
-
         jLabel27.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel27.setText("Serviço 3:");
 
@@ -462,13 +451,6 @@ public class OrdemDeServico extends javax.swing.JFrame {
         jTextField26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField26ActionPerformed(evt);
-            }
-        });
-
-        jTextField28.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
-        jTextField28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField28ActionPerformed(evt);
             }
         });
 
@@ -541,7 +523,7 @@ public class OrdemDeServico extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel28)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -556,10 +538,6 @@ public class OrdemDeServico extends javax.swing.JFrame {
                                 .addComponent(jLabel29)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel24)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField28))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel27)
                         .addGap(18, 18, 18)
@@ -590,51 +568,40 @@ public class OrdemDeServico extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jLabel19)
-                        .addGap(9, 9, 9)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel20)
-                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel21))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel27)
-                            .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(1, 1, 1)))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(jTextField28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(9, 9, 9)
+                .addContainerGap()
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
                 .addComponent(jLabel22)
+                .addGap(75, 168, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(jLabel19)
+                .addGap(9, 9, 9)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel28)
-                            .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel29)
-                            .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel30))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel23)
-                            .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(75, 75, 75))))
+                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel21))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel27)
+                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel28)
+                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel29)
+                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel30)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel23)
+                        .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel25.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
@@ -956,15 +923,15 @@ public class OrdemDeServico extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         TelaInicial NovaJanela = new TelaInicial();
-            NovaJanela.setVisible(true);
-            this.setVisible(false);
+        NovaJanela.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusLost
-       if(jTextField2.getText().length()==0){// Se o campo tiver vazio, lenght ==0, não verifica nada
-           jButton2.setEnabled(false);//Desabilita o botão de salvar em acionamento repetitivo
-           return;
-       }
+        if (jTextField2.getText().length() == 0) {// Se o campo tiver vazio, lenght ==0, não verifica nada
+            jButton2.setEnabled(false);//Desabilita o botão de salvar em acionamento repetitivo
+            return;
+        }
         jButton2.setEnabled(true);//Habilita o botão de salvar em acionamento
         buscarVeiculo(jTextField2.getText());
         buscarCliente(jTextField9.getText());
@@ -979,7 +946,7 @@ public class OrdemDeServico extends javax.swing.JFrame {
         adicionar();
         jButton2.setEnabled(false);//Desabilita o botão de salvar em acionamento repetitivo
         jTextField19.grabFocus();
-                   
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField20ActionPerformed
@@ -987,7 +954,7 @@ public class OrdemDeServico extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField20ActionPerformed
 
     private void jTextField20FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField20FocusLost
-       
+
     }//GEN-LAST:event_jTextField20FocusLost
 
     private void jTextField7FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField7FocusLost
@@ -997,10 +964,6 @@ public class OrdemDeServico extends javax.swing.JFrame {
     private void jTextField26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField26ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField26ActionPerformed
-
-    private void jTextField28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField28ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField28ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         JOptionPane.showInternalMessageDialog(null, "Comando em elaboração - Impressão da Ordem de Serviço.");
@@ -1062,7 +1025,6 @@ public class OrdemDeServico extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
@@ -1104,7 +1066,6 @@ public class OrdemDeServico extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField24;
     private javax.swing.JTextField jTextField25;
     private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField28;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;

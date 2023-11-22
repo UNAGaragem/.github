@@ -114,7 +114,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="87" max="32767" attributes="0"/>
+              <EmptySpace pref="93" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -537,6 +537,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField18">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -547,6 +548,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField17">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -577,6 +579,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField19">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -587,6 +590,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField21">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -613,6 +617,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField36">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -620,6 +625,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField37">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -627,6 +633,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField42">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -652,7 +659,7 @@
           <Properties>
             <Property name="editable" type="boolean" value="true"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Narrow" size="13" style="0"/>
+              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="5">
@@ -681,8 +688,9 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField45">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Narrow" size="13" style="0"/>
+              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
@@ -754,7 +762,7 @@
                               <Component id="jTextField46" min="-2" pref="88" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="128" max="32767" attributes="0"/>
+                      <EmptySpace pref="134" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -868,6 +876,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField28">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
@@ -878,6 +887,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField29">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
@@ -908,6 +918,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField33">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
@@ -918,6 +929,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField34">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
@@ -936,6 +948,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField39">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
@@ -951,6 +964,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField43">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
@@ -966,6 +980,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField38">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial Narrow" size="13" style="0"/>
                 </Property>
@@ -983,7 +998,7 @@
               <Properties>
                 <Property name="editable" type="boolean" value="true"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Narrow" size="13" style="0"/>
+                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="5">
@@ -1004,8 +1019,9 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTextField46">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial Narrow" size="13" style="0"/>
+                  <Font name="Arial Rounded MT Bold" size="13" style="0"/>
                 </Property>
               </Properties>
             </Component>
@@ -1139,7 +1155,7 @@
                               <Component id="jButton1" min="-2" pref="129" max="-2" attributes="0"/>
                               <Component id="jButton3" alignment="1" min="-2" pref="129" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="359" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="394" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -1265,6 +1281,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField35">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -1275,6 +1292,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField48">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -1305,6 +1323,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField51">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -1315,6 +1334,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField52">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -1333,6 +1353,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField53">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -1348,6 +1369,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField54">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -1363,6 +1385,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField56">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>
@@ -1380,7 +1403,7 @@
           <Properties>
             <Property name="editable" type="boolean" value="true"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Narrow" size="13" style="0"/>
+              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
             </Property>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="5">
@@ -1401,8 +1424,9 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField57">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial Narrow" size="13" style="0"/>
+              <Font name="Arial Rounded MT Bold" size="13" style="0"/>
             </Property>
           </Properties>
         </Component>
@@ -1424,6 +1448,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField44">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Narrow" size="13" style="0"/>
             </Property>

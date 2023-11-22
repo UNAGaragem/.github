@@ -432,7 +432,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
 
             } else {
 
-                JOptionPane.showInternalMessageDialog(null, "Campo inexistente ou campo não digitado");
+               // JOptionPane.showInternalMessageDialog(null, "Campo inexistente ou campo não digitado");
 
             }
         } catch (Exception e) {
@@ -674,6 +674,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
 
         jTextField5.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
+        jTextField18.setEditable(false);
         jTextField18.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -681,6 +682,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
             }
         });
 
+        jTextField17.setEditable(false);
         jTextField17.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -702,6 +704,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
             }
         });
 
+        jTextField19.setEditable(false);
         jTextField19.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -709,6 +712,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
             }
         });
 
+        jTextField21.setEditable(false);
         jTextField21.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -722,10 +726,13 @@ public class ExecucaoServico extends javax.swing.JFrame {
         jLabel17.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel17.setText("Valor MO");
 
+        jTextField36.setEditable(false);
         jTextField36.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
+        jTextField37.setEditable(false);
         jTextField37.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
+        jTextField42.setEditable(false);
         jTextField42.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         jLabel22.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
@@ -735,7 +742,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
         jLabel25.setText("Status Serviço 1:");
 
         jComboBox1.setEditable(true);
-        jComboBox1.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
+        jComboBox1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Não iniciado", "Iniciado", "Aguardando peça", "Finalizado", " " }));
         jComboBox1.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -746,7 +753,8 @@ public class ExecucaoServico extends javax.swing.JFrame {
         jLabel27.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel27.setText("Operador:");
 
-        jTextField45.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
+        jTextField45.setEditable(false);
+        jTextField45.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
 
         jLabel13.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel13.setText("Serviço 2:");
@@ -769,6 +777,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
 
         jTextField25.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
+        jTextField28.setEditable(false);
         jTextField28.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -776,6 +785,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
             }
         });
 
+        jTextField29.setEditable(false);
         jTextField29.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -797,6 +807,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
             }
         });
 
+        jTextField33.setEditable(false);
         jTextField33.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -804,6 +815,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
             }
         });
 
+        jTextField34.setEditable(false);
         jTextField34.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -814,23 +826,26 @@ public class ExecucaoServico extends javax.swing.JFrame {
         jLabel19.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel19.setText("Valor MO");
 
+        jTextField39.setEditable(false);
         jTextField39.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         jLabel18.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel18.setText("Valor Produto");
 
+        jTextField43.setEditable(false);
         jTextField43.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         jLabel23.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel23.setText("Total Serviço 2:");
 
+        jTextField38.setEditable(false);
         jTextField38.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         jLabel26.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel26.setText("Status Serviço 2:");
 
         jComboBox2.setEditable(true);
-        jComboBox2.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
+        jComboBox2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Não iniciado", "Iniciado", "Aguardando peça", "Finalizado", " " }));
         jComboBox2.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -838,7 +853,8 @@ public class ExecucaoServico extends javax.swing.JFrame {
             }
         });
 
-        jTextField46.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
+        jTextField46.setEditable(false);
+        jTextField46.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
 
         jLabel28.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel28.setText("Operador:");
@@ -897,7 +913,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
                         .addComponent(jLabel28)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField46, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(128, Short.MAX_VALUE))
+                .addContainerGap(134, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1088,6 +1104,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
 
         jTextField32.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
+        jTextField35.setEditable(false);
         jTextField35.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField35.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1095,6 +1112,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
             }
         });
 
+        jTextField48.setEditable(false);
         jTextField48.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField48.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1116,6 +1134,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
             }
         });
 
+        jTextField51.setEditable(false);
         jTextField51.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField51.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1123,6 +1142,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
             }
         });
 
+        jTextField52.setEditable(false);
         jTextField52.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
         jTextField52.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1133,23 +1153,26 @@ public class ExecucaoServico extends javax.swing.JFrame {
         jLabel32.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel32.setText("Valor MO");
 
+        jTextField53.setEditable(false);
         jTextField53.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         jLabel33.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel33.setText("Valor Produto");
 
+        jTextField54.setEditable(false);
         jTextField54.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         jLabel34.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel34.setText("Total Serviço 3:");
 
+        jTextField56.setEditable(false);
         jTextField56.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         jLabel36.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel36.setText("Status Serviço 3:");
 
         jComboBox3.setEditable(true);
-        jComboBox3.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
+        jComboBox3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Não iniciado", "Iniciado", "Aguardando peça", "Finalizado", " " }));
         jComboBox3.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -1157,7 +1180,8 @@ public class ExecucaoServico extends javax.swing.JFrame {
             }
         });
 
-        jTextField57.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
+        jTextField57.setEditable(false);
+        jTextField57.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
 
         jLabel37.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel37.setText("Operador:");
@@ -1165,6 +1189,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
         jLabel24.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
         jLabel24.setText("Total  Ordem de Serviço:");
 
+        jTextField44.setEditable(false);
         jTextField44.setFont(new java.awt.Font("Arial Narrow", 0, 13)); // NOI18N
 
         jButton1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
@@ -1254,7 +1279,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
                             .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(359, 359, 359))))
+                        .addGap(394, 394, 394))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1440,7 +1465,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addContainerGap(93, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
