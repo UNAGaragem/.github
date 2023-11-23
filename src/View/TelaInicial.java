@@ -15,16 +15,16 @@ import java.util.Date;
 public class TelaInicial extends javax.swing.JFrame {
 
     /**
-     * Creates new form CaminhoUsuario
+     ** Metodo que envia a classe LoginController a ação de inicialização de
+     * data na tela Tela Inicial
      */
     public TelaInicial() {
         initComponents();
-         Controller.LoginController ctrLogin = new Controller.LoginController();
-         jTextField1.setText(ctrLogin.AtualizarCampoData());
-         
-        }
+        Controller.LoginController ctrLogin = new Controller.LoginController();
+        jTextField1.setText(ctrLogin.AtualizarCampoData());
 
-    
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -253,21 +253,21 @@ public class TelaInicial extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-            Veiculo NovaJanela = new Veiculo();
-            NovaJanela.setVisible(true);
-            this.setVisible(false);
+        Veiculo NovaJanela = new Veiculo(); //habilitação acesso á tela Veiculo
+        NovaJanela.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-            Cliente NovaJanela = new Cliente();
-            NovaJanela.setVisible(true);
-            this.setVisible(false);
+        Cliente NovaJanela = new Cliente();//habilitação acesso á tela Cliente
+        NovaJanela.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        ServicoOperador NovaJanela = new ServicoOperador();
-            NovaJanela.setVisible(true);
-            this.setVisible(false);
+        ServicoOperador NovaJanela = new ServicoOperador();//habilitação acesso á tela Serviço Operador
+        NovaJanela.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -275,39 +275,37 @@ public class TelaInicial extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-            Produto NovaJanela = new Produto();
-            NovaJanela.setVisible(true);
-            this.setVisible(false);
+        Produto NovaJanela = new Produto();//habilitação acesso á tela Produto
+        NovaJanela.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Login NovaJanela = new Login();
-            NovaJanela.setVisible(true);
-            this.setVisible(false);
+        Login NovaJanela = new Login(); //Recurso de retorno á tela Login
+        NovaJanela.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        ManutencaoOS NovaJanela = new ManutencaoOS();
-            NovaJanela.setVisible(true);
-            this.setVisible(false);
+        ManutencaoOS NovaJanela = new ManutencaoOS();//habilitação acesso á tela Manutenção OS
+        NovaJanela.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-       OrdemDeServico NovaJanela = new OrdemDeServico();
+        OrdemDeServico NovaJanela = new OrdemDeServico();//habilitação acesso á tela Ordem de Serviço
         NovaJanela.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-         // jButton6.setEnabled(true); -> HABILITADO;
-          // jButton6.setEnabled(false); -> DESABILITADO
-            ExecucaoServico NovaJanela = new ExecucaoServico();
-            NovaJanela.setVisible(true);
-            this.setVisible(false);
+        ExecucaoServico NovaJanela = new ExecucaoServico();//habilitação acesso á tela Execução Serviço
+        NovaJanela.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        Orcamento NovaJanela = new Orcamento();
+        Orcamento NovaJanela = new Orcamento();//habilitação acesso á tela Orçamwento
         NovaJanela.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton10ActionPerformed

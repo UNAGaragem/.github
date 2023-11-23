@@ -127,6 +127,10 @@ public class Cliente {
         this.telefone = telefone;
     }
 
+    /**
+     **Metodo que ao receber o comando da classe ClienteController e efetua a ação adicionar, solicitada pela View.
+     * @throws SQLException
+     */
     public void adicionar() throws SQLException {//Execução do insert no DB
 
         Connection conexao = null;
@@ -155,6 +159,12 @@ public class Cliente {
 
     }
 
+    /**
+     **Metodo que ao receber o comando da classe ClienteController e efetua a ação consultar, solicitada pela View.
+     * @param cpf_cnpj
+     * @return
+     * @throws SQLException
+     */
     public Cliente consultar(String cpf_cnpj) throws SQLException {//Execução do select atraves do objeto, no DB
 
         Connection conexao = null;
@@ -194,6 +204,10 @@ public class Cliente {
 
     }
 
+    /**
+     **Metodo que ao receber o comando da classe ClienteController e efetua a ação alterar, solicitada pela View.
+     * @throws SQLException
+     */
     public void alterar() throws SQLException {//Execução do insert no DB
 
         Connection conexao = null;
@@ -222,6 +236,11 @@ public class Cliente {
 
     }
 
+    /**
+     **Metodo que ao receber o comando da classe ClienteController e efetua a ação deletar, solicitada pela View.
+     * @param cpf_cnpj
+     * @throws SQLException
+     */
     public void deletar(String cpf_cnpj) throws SQLException {//Execução do insert no DB
 
         Connection conexao = null;

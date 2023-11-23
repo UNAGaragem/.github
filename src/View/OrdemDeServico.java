@@ -25,7 +25,8 @@ public class OrdemDeServico extends javax.swing.JFrame {
     int contadorLoginErrado = 0;
 
     /**
-     * Creates new form OrdemDeServico1
+     ** Metodo que envia a classe LoginController a ação de inicialização de
+     * data na tela Tela Inicial E também, inicialização/gerenciamento do Numero da Ordem de Serviço
      */
     public OrdemDeServico() {
         initComponents();
@@ -37,6 +38,12 @@ public class OrdemDeServico extends javax.swing.JFrame {
 
     }
 
+    /**
+     ****Metodo previsto a enviar á classe OrdemDeServicoController a ação de GerarIdentificadorOs e alimentar na 
+     * tabela ordemdeservicoab, sendo que o numero de OS inicia-se pelo numero 230001.
+     * Por enquanto tudo se faz por aqui, na View.
+     * @return
+     */
     private int GerarIdentificadorOs() {
 
         int numeroOs = 230001;
@@ -66,6 +73,12 @@ public class OrdemDeServico extends javax.swing.JFrame {
         return numeroOs;
     }
 
+    /**
+     ***Metodo previsto a enviar á classe OrdemDeServicoController a ação de buscarVeiculo, atraves do numero da placa,
+     * na tabela cadastroveiculo.
+     * Por enquanto tudo se faz por aqui, na View.
+     * @param placa
+     */
     private void buscarVeiculo(String placa) {
 
         String sql = "select * from cadastroveiculo where placa=?";
@@ -97,6 +110,12 @@ public class OrdemDeServico extends javax.swing.JFrame {
         }
     }
 
+    /**
+     ***Metodo previsto a enviar á classe OrdemDeServicoController a ação de buscarCliente, atraves do cpf_cnpj,
+     * na tabela cadastrocliente.
+     * Por enquanto tudo se faz por aqui, na View.
+     * @param cpf_cnpj
+     */
     private void buscarCliente(String cpf_cnpj) {
 
         String sql = "select * from cadastrocliente where cpf_cnpj=?";
@@ -124,18 +143,17 @@ public class OrdemDeServico extends javax.swing.JFrame {
                 JOptionPane.showInternalMessageDialog(null,
                         "Cliente não cadastrado ou campo não digitado");
 
-                //  jTextField1.setText(null);
-                //  jTextField2.setText(null);
-                //  jComboBox1.setSelectedIndex(WIDTH);
-                //  jTextField3.setText(null);
-                //  jTextField4.setText(null);
-//
             }
         } catch (Exception e) {
             JOptionPane.showInternalMessageDialog(null, e);
         }
     }
 
+    /**
+     **Metodo previsto a enviar á classe OrdemDeServicoController a ação de adicionar dados do servico na tabela
+     * ordemdeservicoab.
+     * Por enquanto tudo se faz por aqui, na View.
+     */
     private void adicionar() {
         String sql = "insert into ordemdeservicoab(numero_os,placa,quilometragem,cpf_cnpj,"
                 + "servico1,servico2,servico3,data_abertura,data_termino_servico,data_pagamento,data_entrega_veiculo) values(?,?,?,?,?,?,?,NOW(),Null,Null,Null)";
@@ -146,22 +164,14 @@ public class OrdemDeServico extends javax.swing.JFrame {
             pat.setString(1, jTextField1.getText());
             //pat.setString(2,BuscarDataAtualFormatoYYYYMMDDHHmm());  data_servico,placa
             // pat.setString(2,jTextField25.getText());
-          //  pat.setString(2, jTextField25.getText());
+            //  pat.setString(2, jTextField25.getText());
             pat.setString(2, jTextField2.getText());
             pat.setString(3, jTextField7.getText());
             pat.setString(4, jTextField9.getText());
             pat.setString(5, jTextField18.getText());
             pat.setString(6, jTextField17.getText());
             pat.setString(7, jTextField26.getText());
-            //pat.setString(9, jTextField21.getText());
-            //pat.setString(10, jTextField22.getText());
-           // pat.setString(11, jTextField23.getText());
-            //pat.setString(8,jTextField19.getText());
 
-            //pat.setString(10,jTextField19.getText());//NOW()termino_servico
-            //prever os campos aqui 
-            // .getSelectedItem()
-            //A linha abaixo atualiza a tabela
             pat.executeUpdate();
 
         } catch (Exception e) {
@@ -568,40 +578,42 @@ public class OrdemDeServico extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addComponent(jLabel22)
-                .addGap(75, 168, Short.MAX_VALUE))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel19)
-                .addGap(9, 9, 9)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel21))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel27)
-                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel28)
-                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel29)
-                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel30)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel23)
-                        .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabel22))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jLabel19)
+                        .addGap(9, 9, 9)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel20)
+                            .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel21))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel27)
+                            .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel28)
+                            .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel29)
+                            .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel23)
+                                .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel30)))))
+                .addContainerGap(124, Short.MAX_VALUE))
         );
 
         jLabel25.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 13)); // NOI18N
@@ -922,7 +934,7 @@ public class OrdemDeServico extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField19ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        TelaInicial NovaJanela = new TelaInicial();
+        TelaInicial NovaJanela = new TelaInicial();//Recurso de retorno á Tela Inicial
         NovaJanela.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed

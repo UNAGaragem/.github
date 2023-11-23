@@ -35,7 +35,8 @@ public class Produto extends javax.swing.JFrame {
     int contadorLoginErrado = 0;
 
     /**
-     * Creates new form CadastroProduto
+     ** Metodo que envia a classe LoginController a ação de inicialização de
+     * data na tela Tela Produto
      */
     public Produto() {
         initComponents();
@@ -45,6 +46,12 @@ public class Produto extends javax.swing.JFrame {
         jTextField1.grabFocus();
     }
 
+    /**
+     * Metodo que envia a classe ProdutoController a ação de adicionar dados, na
+     * tabela cadastroproduto
+     *
+     * @throws SQLException
+     */
     private void adicionar() throws SQLException {
 
         Controller.ProdutoController obj = new Controller.ProdutoController();
@@ -53,6 +60,12 @@ public class Produto extends javax.swing.JFrame {
 
     }
 
+    /**
+     ** Metodo que envia a classe ProdutoController a ação de consultar dados,
+     * á tabela cadastroproduto
+     *
+     * @throws SQLException
+     */
     private void consultar() throws SQLException {
         Controller.ProdutoController obj = new Controller.ProdutoController();
         var resultado = obj.consultar(jTextField1.getText());//Referencia do campo de busca
@@ -68,6 +81,12 @@ public class Produto extends javax.swing.JFrame {
 
     }
 
+    /**
+     ** Metodo que envia a classe ProdutoController a ação de alterar dados, á
+     * tabela cadastroproduto
+     *
+     * @throws SQLException
+     */
     private void alterar() throws SQLException {
 
         Controller.ProdutoController obj = new Controller.ProdutoController();
@@ -77,6 +96,12 @@ public class Produto extends javax.swing.JFrame {
 
     }
 
+    /**
+     ** Metodo que envia a classe ProdutoController a ação de deletar todos os
+     * dados do produto ná tabela cadastroproduto
+     *
+     * @throws SQLException
+     */
     private void deletar() throws SQLException {
 
         int confirma = JOptionPane.showConfirmDialog(null,
@@ -430,7 +455,7 @@ public class Produto extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        TelaInicial NovaJanela = new TelaInicial();
+        TelaInicial NovaJanela = new TelaInicial();//Recurso de retorno á Tela Inicial
         NovaJanela.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton5ActionPerformed
@@ -460,8 +485,7 @@ public class Produto extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        //  jTextField1.setText("");
-        jTextField1.setText("");
+        jTextField1.setText("");//Ação do botão limpa tela
         jComboBox1.setSelectedIndex(0);
         jTextField2.setText("");
         jTextField3.setText("");

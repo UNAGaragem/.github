@@ -97,6 +97,10 @@ public class Veiculo {//extends ModuloConexao.java
         this.quilometragem = quilometragem;
     }
 
+    /**
+     **Metodo que ao receber o comando da classe VeiculoController e efetua a ação adicionar, solicitada pela View.
+     * @throws SQLException
+     */
     public void adicionar() throws SQLException {//Execução do insert no DB
 
         Connection conexao = null;
@@ -123,6 +127,12 @@ public class Veiculo {//extends ModuloConexao.java
 
     }
 
+    /**
+     **Metodo que ao receber o comando da classe VeiculoController e efetua a ação consultar, solicitada pela View.
+     * @param placa
+     * @return
+     * @throws SQLException
+     */
     public Veiculo consultar(String placa) throws SQLException {//Execução do select atraves do objeto, no DB
 
         Connection conexao = null;
@@ -159,6 +169,10 @@ public class Veiculo {//extends ModuloConexao.java
 
     }
 
+    /**
+     **Metodo que ao receber o comando da classe VeiculoController e efetua a ação alterar, solicitada pela View.
+     * @throws SQLException
+     */
     public void alterar() throws SQLException {//Execução do insert no DB
 
         Connection conexao = null;
@@ -184,6 +198,11 @@ public class Veiculo {//extends ModuloConexao.java
 
     }
 
+    /**
+     **Metodo que ao receber o comando da classe VeiculoController e efetua a ação deletar, solicitada pela View.
+     * @param placa
+     * @throws SQLException
+     */
     public void deletar(String placa) throws SQLException {//Execução do insert no DB
 
         Connection conexao = null;

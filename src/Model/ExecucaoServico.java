@@ -74,6 +74,12 @@ public class ExecucaoServico {
         this.valorTotal = valorTotal;
     }
 
+    /**
+     **Metodo previsto a receber o comando da classe ExecucaoServicoController
+     * e efetua a ação salvar, solicitada pela View.
+     *
+     * @param cpf_cnpj
+     */
     public void salvarExecucaoDeServico(String cpf_cnpj) {
 
     }

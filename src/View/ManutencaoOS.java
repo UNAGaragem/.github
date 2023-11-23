@@ -25,7 +25,8 @@ public class ManutencaoOS extends javax.swing.JFrame {
     int contadorLoginErrado = 0;
 
     /**
-     * Creates new form OrdemDeServico
+     ** Metodo que envia a classe LoginController a ação de inicialização de
+     * data na tela Manutenção Os
      */
     public ManutencaoOS() {
         initComponents();
@@ -36,6 +37,11 @@ public class ManutencaoOS extends javax.swing.JFrame {
 
     }
 
+    /**
+     ***Metodo previsto a enviar á classe OrdemDeServicoController a ação de
+     * consultar dados na tabela ordemdeservicoab. No momento tudo se faz por
+     * aqui, na View.
+     */
     private void consultar() {
 
         String sql = "select * from ordemdeservicoab where numero_os=?";
@@ -61,7 +67,7 @@ public class ManutencaoOS extends javax.swing.JFrame {
 
                 //Configuração alimentação dos campos 3
                 jTextField79.setText(rs.getString(7));
-                
+
                 jTextField112.setText(rs.getString(9));
                 jTextField50.setText(rs.getString(10));
                 jTextField51.setText(rs.getString(11));
@@ -70,19 +76,17 @@ public class ManutencaoOS extends javax.swing.JFrame {
 
                 JOptionPane.showInternalMessageDialog(null, "Usuário não cadastrado ou campo não digitado");
 
-               /* jTextField1.setText(null);
-                jTextField24.setText(null);
-                jTextField18.setText(null);
-                jTextField2.setText(null);
-                jTextField7.setText(null);
-                jTextField55.setText(null);*/
-
             }
         } catch (Exception e) {
             JOptionPane.showInternalMessageDialog(null, e);
         }
     }
 
+    /**
+     ***Metodo previsto a enviar á classe OrdemDeServicoController a ação de
+     * finalizar dados na tabela ordemdeservicoab. No momento tudo se faz por
+     * aqui, na View.
+     */
     private void finalizarServico() {
 
         String sql = "update ordemdeservicoab set data_termino_servico=?,data_pagamento=?,data_entrega_veiculo=? where numero_os=?";
@@ -106,7 +110,12 @@ public class ManutencaoOS extends javax.swing.JFrame {
 
     }
 
-    private void deletar() {
+    /**
+     ***Metodo previsto a enviar á classe ManutencaoServicoController a ação de
+     * deletar todos os dados na tabela ordemdeservicoab. No momento tudo se faz
+     * por aqui, na View.
+     */
+    /*private void deletar() {
 
         int confirma = JOptionPane.showConfirmDialog(null,
                 "Tem certeza que deseja excluir a informação?", "Atenção",
@@ -130,6 +139,10 @@ public class ManutencaoOS extends javax.swing.JFrame {
 
     }
 
+    /**
+     ***Metodo previsto a enviar á classe OrdemDeServicoController a ação de consultar dados na tabela execucao_de_servico-os.
+     * No momento tudo se faz por aqui, na View.
+     */
     private void consultarExecServ() {
 
         String sql = "select * from execucao_de_servico_os where numero_os=?";
@@ -203,6 +216,13 @@ public class ManutencaoOS extends javax.swing.JFrame {
         }
     }
 
+    /**
+     ****Metodo previsto a enviar á classe OrdemDeServicoController a ação de
+     * buscar dados na tabela cadastroveiculo. No momento tudo se faz por aqui,
+     * na View.
+     *
+     * @param placa
+     */
     private void buscarVeiculo(String placa) {
 
         String sql = "select * from cadastroveiculo where placa=?";
@@ -243,6 +263,13 @@ public class ManutencaoOS extends javax.swing.JFrame {
         }
     }
 
+    /**
+     ***Metodo previsto a enviar á classe OrdemDeServicoController a ação de
+     * buscar dados na tabela cadsstrocliente. No momento tudo se faz por aqui,
+     * na View.
+     *
+     * @param cpf_cnpj
+     */
     private void buscarCliente(String cpf_cnpj) {
 
         String sql = "select * from cadastrocliente where cpf_cnpj=?";
@@ -283,6 +310,16 @@ public class ManutencaoOS extends javax.swing.JFrame {
         }
     }
 
+    /**
+     **Metodo previsto a enviar á classe OrdemDeServicoController a ação de
+     * buscar dados na tabela cadastroproduto. No momento tudo se faz por aqui,
+     * na View.
+     *
+     * @param modelo
+     * @param codigo
+     * @param campoDescricao
+     * @return
+     */
     private Double BuscarValorProduto(String modelo, String codigo, javax.swing.JTextField campoDescricao) {
 
         campoDescricao.setText("");
@@ -312,6 +349,16 @@ public class ManutencaoOS extends javax.swing.JFrame {
         return 0.0;
     }
 
+    /**
+     ****Metodo previsto a enviar á classe OrdemDeServicoController a ação de
+     * buscar dados na tabela cadastrooperador. No momento tudo se faz por aqui,
+     * na View.
+     *
+     * @param modelo
+     * @param codigo
+     * @param campoDescricao
+     * @return
+     */
     private Double BuscarMo(String modelo, String codigo, javax.swing.JTextField campoDescricao) {
 
         campoDescricao.setText("");
@@ -343,6 +390,10 @@ public class ManutencaoOS extends javax.swing.JFrame {
         return 0.0;
     }
 
+    /**
+     ***Metodo previsto a enviar á classe OrdemDeServicoController a ação de
+     * CalcularTotalProd_Mo. No momento tudo se faz por aqui, na View.
+     */
     private void CalcularTotalProd_Mo() {
 
         try {
@@ -356,6 +407,10 @@ public class ManutencaoOS extends javax.swing.JFrame {
         }
     }
 
+    /**
+     ***Metodo previsto a enviar á classe OrdemDeServicoController a ação de
+     * CalcularTotalProd_Mo_S2. No momento tudo se faz por aqui, na View.
+     */
     private void CalcularTotalProd_Mo_S2() {
 
         try {

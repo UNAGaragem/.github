@@ -35,17 +35,23 @@ public class ServicoOperador extends javax.swing.JFrame {
     int contadorLoginErrado = 0;
 
     /**
-     * Creates new form CadastroServicoOperador
+     ** Metodo que envia a classe LoginController a ação de inicialização de
+     * data na tela Serviço Operador
      */
     public ServicoOperador() {
         initComponents();
         Controller.LoginController ctrLogin = new Controller.LoginController();
         jTextField6.setText(ctrLogin.AtualizarCampoData());
         conexao = ModuloConexao.conector();
-        // jComboBox1.grabFocus();
         jTextField5.grabFocus();
     }
 
+    /**
+     ** Metodo que envia a classe ServicoOperadorController a ação de adicionar
+     * dados, á tabela cadastrooperadorservico
+     *
+     * @throws SQLException
+     */
     private void adicionar() throws SQLException {
 
         Controller.ServicoOperadorController obj = new Controller.ServicoOperadorController();
@@ -55,6 +61,12 @@ public class ServicoOperador extends javax.swing.JFrame {
 
     }
 
+    /**
+     ** Metodo que envia a classe ServicoOperadorController a ação de consultar
+     * dados, á tabela cadastrooperadorservico
+     *
+     * @throws SQLException
+     */
     private void consultar() throws SQLException {
         Controller.ServicoOperadorController obj = new Controller.ServicoOperadorController();
         var resultado = obj.consultar(jTextField5.getText());
@@ -70,6 +82,12 @@ public class ServicoOperador extends javax.swing.JFrame {
         }
     }
 
+    /**
+     *** Metodo que envia a classe ServicoOperadorController a ação de alterar
+     * dados, á tabela cadastrooperadorservico
+     *
+     * @throws SQLException
+     */
     private void alterar() throws SQLException {
 
         Controller.ServicoOperadorController obj = new Controller.ServicoOperadorController();
@@ -79,6 +97,12 @@ public class ServicoOperador extends javax.swing.JFrame {
 
     }
 
+    /**
+     *** Metodo que envia a classe ServicoOperadorController a ação de deletar
+     * dados, á tabela cadastrooperadorservico
+     *
+     * @throws SQLException
+     */
     private void deletar() throws SQLException {
 
         int confirma = JOptionPane.showConfirmDialog(null,
@@ -449,7 +473,7 @@ public class ServicoOperador extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        TelaInicial NovaJanela = new TelaInicial();
+        TelaInicial NovaJanela = new TelaInicial();//Recurso de retorno a tela Inicial
         NovaJanela.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -503,7 +527,7 @@ public class ServicoOperador extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        jTextField5.setText("");
+        jTextField5.setText("");//Ações do botão limoa tela
         jTextField1.setText("");
         jComboBox1.setSelectedIndex(0);
         jComboBox2.setSelectedIndex(0);

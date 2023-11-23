@@ -9,7 +9,7 @@ package Model;
  * @author sudar
  */
 public class OrdemDeServico {
-    
+
     private String itemServico;
     private String descricao;
     private String codigoProd;
@@ -73,9 +73,15 @@ public class OrdemDeServico {
     public void setValorTotal(String valorTotal) {
         this.valorTotal = valorTotal;
     }
-    
-     public void salvarOrdemDeServico(String cpf_cnpj) {
-        
+
+    /**
+     **Metodo previsto a receber o comando da classe OrdemDeServicoController e
+     * efetua a ação salvar, solicitada pela View
+     *
+     * @param cpf_cnpj
+     */
+    public void salvarOrdemDeServico(String cpf_cnpj) {
+
     }
-    
+
 }

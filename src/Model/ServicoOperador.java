@@ -88,6 +88,12 @@ public class ServicoOperador {
         this.tempoExecucao = tempoExecucao;
     }
 
+    /**
+     **Metodo que ao receber o comando da classe ServicoOperadorController e
+     * efetua a ação adicionar, solicitada pela View.
+     *
+     * @throws SQLException
+     */
     public void adicionar() throws SQLException {//Execução do insert no DB
 
         Connection conexao = null;
@@ -114,6 +120,14 @@ public class ServicoOperador {
 
     }
 
+    /**
+     **Metodo que ao receber o comando da classe ServicoOperadorController e
+     * efetua a ação consultar, solicitada pela View.
+     *
+     * @param codigo
+     * @return
+     * @throws SQLException
+     */
     public ServicoOperador consultar(String codigo) throws SQLException {//Execução do select atraves do objeto, no DB
 
         Connection conexao = null;
@@ -148,6 +162,12 @@ public class ServicoOperador {
         return this;
     }
 
+    /**
+     **Metodo que ao receber o comando da classe ServicoOperadorController e
+     * efetua a ação alterar, solicitada pela View.
+     *
+     * @throws SQLException
+     */
     public void alterar() throws SQLException {//Execução do insert no DB
 
         Connection conexao = null;
@@ -171,18 +191,25 @@ public class ServicoOperador {
 
     }
 
+    /**
+     **Metodo que ao receber o comando da classe ServicoOperadorController e
+     * efetua a ação deletar, solicitada pela View.
+     *
+     * @param codigo
+     * @throws SQLException
+     */
     public void deletar(String codigo) throws SQLException {//Execução do insert no DB
 
         Connection conexao = null;
         PreparedStatement pat = null;
         ResultSet rs = null;
         conexao = ModuloConexao.conector();
-        
+
         String sql = "delete from cadastrooperador where codigo=?";
 
-                pat = conexao.prepareStatement(sql);
-                pat.setString(1, codigo);
-                pat.executeUpdate();
+        pat = conexao.prepareStatement(sql);
+        pat.setString(1, codigo);
+        pat.executeUpdate();
 
     }
 

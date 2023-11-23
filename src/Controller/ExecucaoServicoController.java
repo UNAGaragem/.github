@@ -10,6 +10,12 @@ package Controller;
  */
 public class ExecucaoServicoController {
 
+    /**
+     * Metodo intermediario previsto para salvar informações da execução de
+     * serviço, no momento ainda totalmente na View
+     *
+     * @return
+     */
     public boolean salvarExecucaoServico() {
 
         return true;

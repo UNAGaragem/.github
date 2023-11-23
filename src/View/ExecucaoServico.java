@@ -25,7 +25,8 @@ public class ExecucaoServico extends javax.swing.JFrame {
     int contadorLoginErrado = 0;
 
     /**
-     * Creates new form ExecucaoServico
+     ** Metodo que envia a classe LoginController a ação de inicialização de
+     * data na tela Execução Servico
      */
     public ExecucaoServico() {
         initComponents();
@@ -35,6 +36,10 @@ public class ExecucaoServico extends javax.swing.JFrame {
         jTextField1.grabFocus();
     }
 
+    /**
+     *Metodo previsto a enviar á classe OrdemDeServicoController a ação de consultar dados, á tabela ordemservicoab.
+     * No momento tudo se faz por aqui, na View.
+     */
     private void consultar() {
 
         String sql = "select * from ordemdeservicoab where numero_os=?";
@@ -65,6 +70,11 @@ public class ExecucaoServico extends javax.swing.JFrame {
         }
     }
 
+    /**
+     * *Metodo previsto a enviar á classe VeiculoController a ação de buscar dados, á tabela cadastroveiculo.
+     *  No momento tudo se faz por aqui, na View.
+     * @param placa
+     */
     private void buscarVeiculo(String placa) {
 
         String sql = "select * from cadastroveiculo where placa=?";
@@ -95,6 +105,11 @@ public class ExecucaoServico extends javax.swing.JFrame {
         }
     }
 
+    /**
+     **Metodo previsto a enviar á classe ClienteController a ação de buscar dados, á tabela cadastrocliente.
+     * No momento tudo se faz por aqui, na View.
+     * @param cpf_cnpj
+     */
     private void buscarCliente(String cpf_cnpj) {
 
         String sql = "select * from cadastrocliente where cpf_cnpj=?";
@@ -122,6 +137,14 @@ public class ExecucaoServico extends javax.swing.JFrame {
 
     }
 
+    /**
+     **Metodo previsto a enviar á classe ProdutoController a ação de buscarr dados, á tabela cadastroproduto.
+     * No momento tudo se faz por aqui, na View.
+     * @param modelo
+     * @param codigo
+     * @param campoDescricao
+     * @return
+     */
     private Double BuscarValorProduto(String modelo, String codigo, javax.swing.JTextField campoDescricao) {
 
         campoDescricao.setText("");
@@ -151,6 +174,15 @@ public class ExecucaoServico extends javax.swing.JFrame {
         return 0.0;
     }
 
+    /**
+     **Metodo previsto a enviar á classe ServicoOperadorController a ação de buscar dados, á tabela cadastrooperador.
+     * No momento tudo se faz por aqui, na View.
+     * @param modelo
+     * @param codigo
+     * @param campoDescricao
+     * @param campoNomeOperador
+     * @return
+     */
     private Double BuscarMo(String modelo, String codigo, javax.swing.JTextField campoDescricao, javax.swing.JTextField campoNomeOperador) {
         if (codigo.length() == 0) {
             return 0.0;
@@ -187,6 +219,10 @@ public class ExecucaoServico extends javax.swing.JFrame {
         return 0.0;
     }
 
+    /**
+     **Metodo previsto a enviar á classe ExecutarServicoController a ação de CalcularTotalProd_Mo.
+     * No momento tudo se faz por aqui, na View.
+     */
     private void CalcularTotalProd_Mo() {
 
         try {
@@ -200,6 +236,10 @@ public class ExecucaoServico extends javax.swing.JFrame {
         }
     }
 
+    /**
+     **Metodo previsto a enviar á classe ExecutarServicoController a ação de CalcularTotalProd_Mo_S2.
+     * No momento tudo se faz por aqui, na View.
+     */
     private void CalcularTotalProd_Mo_S2() {
 
         try {
@@ -213,6 +253,10 @@ public class ExecucaoServico extends javax.swing.JFrame {
         }
     }
 
+    /**
+     **Metodo previsto a enviar á classe ExecutarServicoController a ação de CalcularTotalProd_Mo_S3 dados.
+     * No momento tudo se faz por aqui, na View.
+     */
     private void CalcularTotalProd_Mo_S3() {
 
         try {
@@ -226,6 +270,10 @@ public class ExecucaoServico extends javax.swing.JFrame {
         }
     }
 
+    /**
+     ***Metodo previsto a enviar á classe ExecutarServicoController a ação de alterar dados.
+     * No momento tudo se faz por aqui, na View.
+     */
     private void alterar() {
 
         String sql = "update execucao_de_servico_os set "
@@ -299,6 +347,10 @@ public class ExecucaoServico extends javax.swing.JFrame {
 
     }
 
+    /**
+     ***Metodo previsto a enviar á classe ExecutarServicoController a ação de adicionar dados.
+     * No momento tudo se faz por aqui, na View.
+     */
     private void adicionar() {
         String sql = "insert into execucao_de_servico_os("
                 + "numero_os,placa,"
@@ -372,6 +424,11 @@ public class ExecucaoServico extends javax.swing.JFrame {
         }
     }
 
+    /**
+    ***Metodo previsto a enviar á classe ExecutarServicoController a ação de select/consulta dados
+    * ja alimentados no ambiente de Execução de Serviço..
+     * No momento tudo se faz por aqui, na View.
+     */
     private void BuscarExecucaoServico() {
 
         String sql = "select * from execucao_de_servico_os where numero_os=?";
@@ -428,12 +485,10 @@ public class ExecucaoServico extends javax.swing.JFrame {
                 jTextField54.setText(rs.getString(44));
 
                 jTextField44.setText(rs.getString(45));
-               
 
             } else {
 
-               // JOptionPane.showInternalMessageDialog(null, "Campo inexistente ou campo não digitado");
-
+                // JOptionPane.showInternalMessageDialog(null, "Campo inexistente ou campo não digitado");
             }
         } catch (Exception e) {
             JOptionPane.showInternalMessageDialog(null, e);
@@ -1538,7 +1593,7 @@ public class ExecucaoServico extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField8ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        TelaInicial NovaJanela = new TelaInicial();
+        TelaInicial NovaJanela = new TelaInicial();//Recurso de retorno a tela Inicial
         NovaJanela.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -1712,8 +1767,8 @@ public class ExecucaoServico extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         adicionar();
-         jButton3.setEnabled(false);//Desabilita o botão de salvar em acionamento repetitivo
-       // jTextField19.grabFocus();
+        jButton3.setEnabled(false);//Desabilita o botão de salvar em acionamento repetitivo
+        // jTextField19.grabFocus();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

@@ -10,6 +10,10 @@ package Controller;
  */
 public class OrdemDeServicoController {
 
+    /**
+     *Metodo intermediario previsto para salvar informações da ordem de serviço, no momento ainda totalmente na View
+     * @return
+     */
     public boolean salvarOrdemDeServico() {
 
         return true;
@@ -17,4 +21,3 @@ public class OrdemDeServicoController {
 
 //return false;
 }
-

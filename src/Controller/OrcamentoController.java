@@ -17,14 +17,25 @@ import javax.swing.JOptionPane;
  */
 public class OrcamentoController {
 
+    /**
+     *Metodo intermediario previsto para salvar informações do orçamento de serviço, no momento ainda totalmente na View
+     * @return
+     */
     public boolean salvarExecucaoServico() {
 
         return true;
     }
 
+    /**
+     * Metodo intermediario que preve o select/consulta na tabela cadastroproduto e busca informações de valores aos parametros 
+     * (modelo e descrição do produto), para que seja concretizado o orçamento.
+     * @param modelo
+     * @param descricao
+     * @return disponibilidade dos valores correspondentes (valor produto, tempo e valor de mão de obra valor total(somatorio).
+     */
     public String orcamento(String modelo, String descricao) {
         String ValorProduto;
-         Connection conexao = ModuloConexao.conector();
+        Connection conexao = ModuloConexao.conector();
         // conexao = null;
         PreparedStatement pat = null;
         ResultSet rs = null;
@@ -40,16 +51,16 @@ public class OrcamentoController {
             //**Tratamento de exceções de "digitação" não foram considerado neste momento.  
             if (rs.next()) {
 
-                ValorProduto=rs.getString(5);
+                ValorProduto = rs.getString(5);
 
             } else {
                 ValorProduto = "0.00";
-              JOptionPane.showInternalMessageDialog(null, "Cadastrado inexistente ou campo não digitado");
+                JOptionPane.showInternalMessageDialog(null, "Cadastrado inexistente ou campo não alimentado");
 
             }
         } catch (Exception e) {
             ValorProduto = "0.00";
-             JOptionPane.showInternalMessageDialog(null,e);
+            JOptionPane.showInternalMessageDialog(null, e);
         }
         return ValorProduto;
     }

@@ -29,7 +29,8 @@ public class Cliente extends javax.swing.JFrame {
     int contadorLoginErrado = 0;
 
     /**
-     * Creates new form CadastroCliente
+     ** Metodo que envia a classe LoginController a ação de inicialização de
+     * data na tela Cliente
      */
     public Cliente() {
         initComponents();
@@ -39,6 +40,12 @@ public class Cliente extends javax.swing.JFrame {
         jTextField1.grabFocus();
     }
 
+    /**
+     * Metodo que envia a classe ClienteController a ação de adicionar dados, á
+     * tabela cadastrocliente
+     *
+     * @throws SQLException
+     */
     private void adicionar() throws SQLException {//Instanciamento/Criação de objeto com parametros do insert.
 
         Controller.ClienteController obj = new Controller.ClienteController();
@@ -48,6 +55,12 @@ public class Cliente extends javax.swing.JFrame {
 
     }
 
+    /**
+     * Metodo que envia a classe ClienteController a ação de consultar dados, á
+     * tabela cadastrocliente
+     *
+     * @throws SQLException
+     */
     private void consultar() throws SQLException {
         Controller.ClienteController obj = new Controller.ClienteController();
         var resultado = obj.consultar(jTextField1.getText());//Referencia do campo de busca
@@ -68,6 +81,12 @@ public class Cliente extends javax.swing.JFrame {
         }
     }
 
+    /**
+     * Metodo que envia a classe ClienteController a ação de alterar dados, á
+     * tabela cadastrocliente
+     *
+     * @throws SQLException
+     */
     private void alterar() throws SQLException {
 
         Controller.ClienteController obj = new Controller.ClienteController();
@@ -77,6 +96,12 @@ public class Cliente extends javax.swing.JFrame {
 
     }
 
+    /**
+     * Metodo que envia a classe ClienteController a ação de deletar todos os
+     * dados, á tabela cadastrocliente
+     *
+     * @throws SQLException
+     */
     private void deletar() throws SQLException {
 
         int confirma = JOptionPane.showConfirmDialog(null,
@@ -89,8 +114,8 @@ public class Cliente extends javax.swing.JFrame {
             Controller.ClienteController obj = new Controller.ClienteController();
             obj.deletar(jTextField1.getText());
         }
-    }   
-  
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -519,13 +544,13 @@ public class Cliente extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField10ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        TelaInicial NovaJanela = new TelaInicial();
+        TelaInicial NovaJanela = new TelaInicial();//Recurso de retorno a tela Incial
         NovaJanela.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-      
+
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
@@ -541,6 +566,7 @@ public class Cliente extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField4ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+
         try {
             adicionar();
         } catch (SQLException ex) {
@@ -557,7 +583,7 @@ public class Cliente extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        jTextField1.setText("");
+        jTextField1.setText("");//Ação de limar tela
         jTextField2.setText("");
         jTextField3.setText("");
         jTextField4.setText("");

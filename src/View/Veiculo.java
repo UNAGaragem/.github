@@ -29,7 +29,8 @@ public class Veiculo extends javax.swing.JFrame {
     int contadorLoginErrado = 0;
 
     /**
-     * Creates new form CadastroVeiculo
+     ** Metodo que envia a classe LoginController a ação de inicialização de
+     * data na tela Veiculo
      */
     public Veiculo() {
         initComponents();
@@ -39,6 +40,12 @@ public class Veiculo extends javax.swing.JFrame {
         jTextField1.grabFocus();
     }
 
+    /**
+     ** Metodo que envia a classe VeiculoController a ação de adicionar dados,
+     * á tabela cadastroveiculo
+     *
+     * @throws SQLException
+     */
     private void adicionar() throws SQLException {//Instanciamento/Criação de objeto com parametros do insert.
         Controller.VeiculoController obj = new Controller.VeiculoController();
         obj.adicionar(jTextField1.getText(), jTextField4.getText(),
@@ -48,6 +55,12 @@ public class Veiculo extends javax.swing.JFrame {
 
     }
 
+    /**
+     ** Metodo que envia a classe VeiculoController a ação de consultar dados,
+     * á tabela cadastroveiculo
+     *
+     * @throws SQLException
+     */
     private void consultar() throws SQLException {
         Controller.VeiculoController obj = new Controller.VeiculoController();
         var resultado = obj.consultar(jTextField1.getText());//Referencia do campo de busca
@@ -64,6 +77,12 @@ public class Veiculo extends javax.swing.JFrame {
         }
     }
 
+    /**
+     ** Metodo que envia a classe VeiculoController a ação de alterar dados, á
+     * tabela cadastroveiculo
+     *
+     * @throws SQLException
+     */
     private void alterar() throws SQLException {
 
         Controller.VeiculoController obj = new Controller.VeiculoController();
@@ -72,6 +91,12 @@ public class Veiculo extends javax.swing.JFrame {
 
     }
 
+    /**
+     ** Metodo que envia a classe VeiculoController a ação de deletar dados, á
+     * tabela cadastroveiculo
+     *
+     * @throws SQLException
+     */
     private void deletar() throws SQLException {
 
         int confirma = JOptionPane.showConfirmDialog(null,

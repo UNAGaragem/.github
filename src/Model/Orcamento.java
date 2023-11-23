@@ -10,21 +10,20 @@ package Model;
  */
 public class Orcamento {
 
-   // private String codigo;
+    // private String codigo;
     private String descricao;
     private String modeloAplicacao;
     private String qtde;
     private String valor;
 
     public Orcamento(String modeloAplicacao, String descricao) {
-       // this.codigo = codigo;
+        // this.codigo = codigo;
         this.descricao = descricao;
         this.modeloAplicacao = modeloAplicacao;
         this.qtde = qtde;
         this.valor = valor;
     }
 
-   
     public String getDescricao() {
         return descricao;
     }
@@ -57,11 +56,23 @@ public class Orcamento {
         this.valor = valor;
     }
 
+    /**
+     **Metodo previsto a receber o comando da classe OrcamentoController e
+     * efetua a ação salvar, solicitada pela View
+     *
+     * @param cpf_cnpj
+     */
     public void salvarOrcamento(String cpf_cnpj) {
 
     }
-    
-    public String retornarOi(){
+
+    /**
+     **Metodo previsto a receber o comando da classe OrcamentoController e
+     * efetua a ação salvar, solicitada pela View
+     *
+     * @return
+     */
+    public String retornarOi() {
         return "Oi";
     }
 }

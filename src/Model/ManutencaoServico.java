@@ -9,7 +9,7 @@ package Model;
  * @author sudar
  */
 public class ManutencaoServico {
-    
+
     public String itemServico;
     public String codigoProd;
     public String descricao;
@@ -104,7 +104,13 @@ public class ManutencaoServico {
         this.dataEntregaVeiculo = dataEntregaVeiculo;
     }
 
-     public void salvarManutencaoOrdemDeServico(String cpf_cnpj) {
-        
+    /**
+     **Metodo previsto a receber o comando da classe ManutencaoOrdemDeServicoController
+     * e efetua a ação salvar, solicitada pela View
+     *
+     * @param cpf_cnpj
+     */
+    public void salvarManutencaoOrdemDeServico(String cpf_cnpj) {
+
     }
 }

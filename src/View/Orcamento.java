@@ -19,53 +19,46 @@ import javax.swing.JOptionPane;
  * @author sudar
  */
 public class Orcamento extends javax.swing.JFrame {
-    Connection conexao = null; 
+
+    Connection conexao = null;
     PreparedStatement pat = null;
     ResultSet rs = null;
     int contadorLoginErrado = 0;
 
     /**
-     * Creates new form Orçamento
+     ** Metodo que envia a classe LoginController a ação de inicialização de
+     * data na tela Tela Orçamento
      */
     public Orcamento() {
         initComponents();
         Controller.LoginController ctrLogin = new Controller.LoginController();
-         jTextField2.setText(ctrLogin.AtualizarCampoData());
-         conexao = ModuloConexao.conector();
-         jComboBox1.grabFocus();
+        jTextField2.setText(ctrLogin.AtualizarCampoData());
+        conexao = ModuloConexao.conector();
+        jComboBox1.grabFocus();
     }
 
-       
-     private void orcamento(String modelo, String descricao) {
-         Controller.OrcamentoController objOrcamento = new Controller.OrcamentoController();
-          ValorProduto.setText(objOrcamento.orcamento(modelo, descricao));
-       
-       
-        /*  String sql = "select * from cadastroproduto where modelo=? and descricao=?";
-
-        try {
-            //Preparação e Passagem dos parametros    
-            pat = conexao.prepareStatement(sql);
-            pat.setString(1, modelo);//variaveis condição de chamada
-            pat.setString(2, descricao);
-            rs = pat.executeQuery();
-            //**Tratamento de exceções de "digitação" não foram considerado neste momento.  
-            if (rs.next()) {
-
-              
-               
-                            
-            } else {
-
-                JOptionPane.showInternalMessageDialog(null, "Cadastrado inexistente ou campo não digitado");
-            
-              }
-        } catch (Exception e) {
-            JOptionPane.showInternalMessageDialog(null, e);
-        }*/
+    /**
+     ****Metodo previsto a enviar á classe OrcamentoController a ação de
+     * orcamento(calculo do valor produto). No momento tudo se faz por aqui, na
+     * View.
+     *
+     * @param modelo
+     * @param descricao
+     */
+    private void orcamento(String modelo, String descricao) {
+        Controller.OrcamentoController objOrcamento = new Controller.OrcamentoController();
+        ValorProduto.setText(objOrcamento.orcamento(modelo, descricao));
     }
 
-      private void orcamentoMo(String modelo, String descricao) {
+    /**
+     ****Metodo previsto a enviar á classe OrcamentoController a ação de
+     * orcamentoMo(calculo de mão de obra) atraves ds dados de modelo e
+     * descrição na tabela cadastrooperador.
+     *
+     * @param modelo
+     * @param descricao
+     */
+    private void orcamentoMo(String modelo, String descricao) {
 
         String sql = "select * from cadastrooperador where modelo=? and descricao=?";
 
@@ -73,37 +66,37 @@ public class Orcamento extends javax.swing.JFrame {
             //Preparação e Passagem dos parametros    
             pat = conexao.prepareStatement(sql);
             pat.setString(1, modelo);//variaveis condição de chamada
-            pat.setString(2, "Reparar "+descricao);
+            pat.setString(2, "Reparar " + descricao);
             rs = pat.executeQuery();
             //**Tratamento de exceções de "digitação" não foram considerado neste momento.  
             if (rs.next()) {
 
-                jTextField3.setText(rs.getString(6 ));
-                               
-               double valorMO = Double.parseDouble(jTextField3.getText())*50.00;
-                ValorMaoObra.setText(String.valueOf(valorMO)); 
-                
-                
-               double soma = Double.parseDouble(ValorProduto.getText()) + Double.parseDouble(ValorMaoObra.getText());
+                jTextField3.setText(rs.getString(6));
+
+                double valorMO = Double.parseDouble(jTextField3.getText()) * 50.00;
+                ValorMaoObra.setText(String.valueOf(valorMO));
+
+                double soma = Double.parseDouble(ValorProduto.getText()) + Double.parseDouble(ValorMaoObra.getText());
                 jTextField1.setText(String.valueOf(soma));
-                            
+
             } else {
 
                 JOptionPane.showInternalMessageDialog(null, "Cadastrado inexistente ou campo não digitado");
-            
-               jComboBox1.setSelectedIndex(0);
-               jComboBox2.setSelectedIndex(0);
-              // ComponenteReparado.setText(null);
-               ValorProduto.setText(null);
-               jTextField3.setText(null);
-               ValorMaoObra.setText(null);
-               jTextField1.setText(null);
+
+                jComboBox1.setSelectedIndex(0);
+                jComboBox2.setSelectedIndex(0);
+                // ComponenteReparado.setText(null);
+                ValorProduto.setText(null);
+                jTextField3.setText(null);
+                ValorMaoObra.setText(null);
+                jTextField1.setText(null);
 //
             }
         } catch (Exception e) {
             JOptionPane.showInternalMessageDialog(null, e);
         }
-      }
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -925,7 +918,7 @@ public class Orcamento extends javax.swing.JFrame {
     }//GEN-LAST:event_ValorProdutoActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        
+
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -933,7 +926,7 @@ public class Orcamento extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        TelaInicial NovaJanela = new TelaInicial();
+        TelaInicial NovaJanela = new TelaInicial();//Recurso de retorno á Tela Inicial
         NovaJanela.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -947,83 +940,97 @@ public class Orcamento extends javax.swing.JFrame {
     }//GEN-LAST:event_ValorMaoObraActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       
-     //   if(ComponenteReparado.getText().length()>0 && jTextField4.getText().length()==0){
-        if(jComboBox2.getSelectedItem().toString().length()>0 && jTextField4.getText().length()==0){
-           jTextField4.setText(jComboBox2.getSelectedItem().toString());
-           jTextField5.setText(ValorProduto.getText());
-           jTextField6.setText(jTextField3.getText());
-           jTextField7.setText(ValorMaoObra.getText());
-           jTextField8.setText( jTextField1.getText());                 
-       }//length()>0 e ==0) - Verifica se campo de descriçãp esta preenchido e se o proximo campo ta em branco para alocação?
-       else if(jComboBox2.getSelectedItem().toString().length()>0 && jTextField9.getText().length()==0){
-               jTextField9.setText(jComboBox2.getSelectedItem().toString());jTextField10.setText(ValorProduto.getText());jTextField11.setText(jTextField3.getText());jTextField12.setText(ValorMaoObra.getText());jTextField13.setText( jTextField1.getText());                 
-       }
-       else if(jComboBox2.getSelectedItem().toString().length()>0 && jTextField14.getText().length()==0){
-               jTextField14.setText(jComboBox2.getSelectedItem().toString());jTextField15.setText(ValorProduto.getText());jTextField16.setText(jTextField3.getText());jTextField17.setText(ValorMaoObra.getText());jTextField18.setText( jTextField1.getText());                 
-       }
-       else if(jComboBox2.getSelectedItem().toString().length()>0 && jTextField19.getText().length()==0){
-               jTextField19.setText(jComboBox2.getSelectedItem().toString());jTextField23.setText(ValorProduto.getText());jTextField21.setText(jTextField3.getText());jTextField20.setText(ValorMaoObra.getText());jTextField22.setText( jTextField1.getText());                 
-       }
-       else if(jComboBox2.getSelectedItem().toString().length()>0 && jTextField26.getText().length()==0){
-               jTextField26.setText(jComboBox2.getSelectedItem().toString());jTextField24.setText(ValorProduto.getText());jTextField27.setText(jTextField3.getText());jTextField25.setText(ValorMaoObra.getText());jTextField28.setText( jTextField1.getText());                 
-       }
-       else if(jComboBox2.getSelectedItem().toString().length()>0 && jTextField33.getText().length()==0){
-               jTextField33.setText(jComboBox2.getSelectedItem().toString());jTextField30.setText(ValorProduto.getText());jTextField31.setText(jTextField3.getText());jTextField32.setText(ValorMaoObra.getText());jTextField29.setText( jTextField1.getText());                 
-       }
-       else if(jComboBox2.getSelectedItem().toString().length()>0 && jTextField34.getText().length()==0){
-               jTextField34.setText(jComboBox2.getSelectedItem().toString());jTextField35.setText(ValorProduto.getText());jTextField36.setText(jTextField3.getText());jTextField37.setText(ValorMaoObra.getText());jTextField38.setText( jTextField1.getText());                 
-       }
-       else if(jComboBox2.getSelectedItem().toString().length()>0 && jTextField43.getText().length()==0){
-               jTextField43.setText(jComboBox2.getSelectedItem().toString());jTextField40.setText(ValorProduto.getText());jTextField39.setText(jTextField3.getText());jTextField41.setText(ValorMaoObra.getText());jTextField42.setText( jTextField1.getText());                 
-       }
-       else {
+        //Repasse a proxima linha (linha abaixo) as informações de resposta a busca de orçamento, possibilitando 
+        //novas busca em incremento 8 campos 
+        //   if(ComponenteReparado.getText().length()>0 && jTextField4.getText().length()==0){
+        if (jComboBox2.getSelectedItem().toString().length() > 0 && jTextField4.getText().length() == 0) {
+            jTextField4.setText(jComboBox2.getSelectedItem().toString());
+            jTextField5.setText(ValorProduto.getText());
+            jTextField6.setText(jTextField3.getText());
+            jTextField7.setText(ValorMaoObra.getText());
+            jTextField8.setText(jTextField1.getText());
+        }//length()>0 e ==0) - Verifica se campo de descriçãp esta preenchido e se o proximo campo ta em branco para alocação?
+        else if (jComboBox2.getSelectedItem().toString().length() > 0 && jTextField9.getText().length() == 0) {
+            jTextField9.setText(jComboBox2.getSelectedItem().toString());
+            jTextField10.setText(ValorProduto.getText());
+            jTextField11.setText(jTextField3.getText());
+            jTextField12.setText(ValorMaoObra.getText());
+            jTextField13.setText(jTextField1.getText());
+        } else if (jComboBox2.getSelectedItem().toString().length() > 0 && jTextField14.getText().length() == 0) {
+            jTextField14.setText(jComboBox2.getSelectedItem().toString());
+            jTextField15.setText(ValorProduto.getText());
+            jTextField16.setText(jTextField3.getText());
+            jTextField17.setText(ValorMaoObra.getText());
+            jTextField18.setText(jTextField1.getText());
+        } else if (jComboBox2.getSelectedItem().toString().length() > 0 && jTextField19.getText().length() == 0) {
+            jTextField19.setText(jComboBox2.getSelectedItem().toString());
+            jTextField23.setText(ValorProduto.getText());
+            jTextField21.setText(jTextField3.getText());
+            jTextField20.setText(ValorMaoObra.getText());
+            jTextField22.setText(jTextField1.getText());
+        } else if (jComboBox2.getSelectedItem().toString().length() > 0 && jTextField26.getText().length() == 0) {
+            jTextField26.setText(jComboBox2.getSelectedItem().toString());
+            jTextField24.setText(ValorProduto.getText());
+            jTextField27.setText(jTextField3.getText());
+            jTextField25.setText(ValorMaoObra.getText());
+            jTextField28.setText(jTextField1.getText());
+        } else if (jComboBox2.getSelectedItem().toString().length() > 0 && jTextField33.getText().length() == 0) {
+            jTextField33.setText(jComboBox2.getSelectedItem().toString());
+            jTextField30.setText(ValorProduto.getText());
+            jTextField31.setText(jTextField3.getText());
+            jTextField32.setText(ValorMaoObra.getText());
+            jTextField29.setText(jTextField1.getText());
+        } else if (jComboBox2.getSelectedItem().toString().length() > 0 && jTextField34.getText().length() == 0) {
+            jTextField34.setText(jComboBox2.getSelectedItem().toString());
+            jTextField35.setText(ValorProduto.getText());
+            jTextField36.setText(jTextField3.getText());
+            jTextField37.setText(ValorMaoObra.getText());
+            jTextField38.setText(jTextField1.getText());
+        } else if (jComboBox2.getSelectedItem().toString().length() > 0 && jTextField43.getText().length() == 0) {
+            jTextField43.setText(jComboBox2.getSelectedItem().toString());
+            jTextField40.setText(ValorProduto.getText());
+            jTextField39.setText(jTextField3.getText());
+            jTextField41.setText(ValorMaoObra.getText());
+            jTextField42.setText(jTextField1.getText());
+        } else {
             JOptionPane.showInternalMessageDialog(null, "Excedeu o limite de possibilidades orçamento");
-       }
-       Double totalGeral = 0.0;//Verificando se o campo esta vazio
-       
-       if(jTextField8.getText().length() != 0)
-       {
-           totalGeral = totalGeral+Double.parseDouble(jTextField8.getText());
-       
-       }
-       if(jTextField13.getText().length() != 0)
-       {
-       totalGeral = totalGeral+Double.parseDouble(jTextField13.getText());
-       }
-       if(jTextField18.getText().length() != 0)
-       {
-       totalGeral = totalGeral+Double.parseDouble(jTextField18.getText());
-       }
-       if(jTextField22.getText().length() != 0)
-       {
-       totalGeral = totalGeral+ Double.parseDouble(jTextField22.getText());
-       }
-       if(jTextField28.getText().length() != 0)
-       {
-       totalGeral = totalGeral+Double.parseDouble(jTextField28.getText());
-       }
-       if(jTextField29.getText().length() != 0)
-       {
-       totalGeral = totalGeral+Double.parseDouble(jTextField29.getText());
-       }
-       if(jTextField38.getText().length() != 0)
-       {
-       totalGeral = totalGeral+ Double.parseDouble(jTextField38.getText());
-       }
-       if(jTextField42.getText().length() != 0)
-       {
-       totalGeral = totalGeral+Double.parseDouble(jTextField42.getText());
-       }
-       
-       jTextField44.setText(String.valueOf(totalGeral));//String.valueOf converte o Double em String
-       
-    jComboBox2.setSelectedItem("");
-    jTextField1.setText("");
-    ValorProduto.setText("");
-    ValorMaoObra.setText("");
-    jTextField3.setText("");
-           
+        }
+        Double totalGeral = 0.0;//Verificando se o campo esta vazio
+
+        if (jTextField8.getText().length() != 0) {
+            totalGeral = totalGeral + Double.parseDouble(jTextField8.getText());
+
+        }
+        if (jTextField13.getText().length() != 0) {
+            totalGeral = totalGeral + Double.parseDouble(jTextField13.getText());
+        }
+        if (jTextField18.getText().length() != 0) {
+            totalGeral = totalGeral + Double.parseDouble(jTextField18.getText());
+        }
+        if (jTextField22.getText().length() != 0) {
+            totalGeral = totalGeral + Double.parseDouble(jTextField22.getText());
+        }
+        if (jTextField28.getText().length() != 0) {
+            totalGeral = totalGeral + Double.parseDouble(jTextField28.getText());
+        }
+        if (jTextField29.getText().length() != 0) {
+            totalGeral = totalGeral + Double.parseDouble(jTextField29.getText());
+        }
+        if (jTextField38.getText().length() != 0) {
+            totalGeral = totalGeral + Double.parseDouble(jTextField38.getText());
+        }
+        if (jTextField42.getText().length() != 0) {
+            totalGeral = totalGeral + Double.parseDouble(jTextField42.getText());
+        }
+
+        jTextField44.setText(String.valueOf(totalGeral));//String.valueOf converte o Double em String
+
+        jComboBox2.setSelectedItem("");
+        jTextField1.setText("");
+        ValorProduto.setText("");
+        ValorMaoObra.setText("");
+        jTextField3.setText("");
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
@@ -1119,18 +1126,54 @@ public class Orcamento extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField13ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-    jComboBox1.setSelectedIndex(0);
-    jComboBox2.setSelectedIndex(0); jTextField1.setText(""); ValorProduto.setText(""); ValorMaoObra.setText("");jTextField3.setText("");
-    jTextField4.setText("");jTextField5.setText("");jTextField6.setText("");jTextField7.setText("");jTextField8.setText("");
-    jTextField9.setText("");jTextField10.setText("");jTextField11.setText("");jTextField12.setText("");jTextField13.setText("");
-    jTextField14.setText("");jTextField15.setText("");jTextField16.setText("");jTextField17.setText("");jTextField18.setText("");
-    jTextField19.setText("");jTextField23.setText("");jTextField21.setText("");jTextField20.setText("");jTextField22.setText("");
-    jTextField26.setText("");jTextField24.setText("");jTextField27.setText("");jTextField25.setText("");jTextField28.setText("");
-    jTextField33.setText("");jTextField30.setText("");jTextField31.setText("");jTextField32.setText("");jTextField29.setText("");
-    jTextField34.setText("");jTextField35.setText("");jTextField36.setText("");jTextField37.setText("");jTextField38.setText("");
-    jTextField43.setText("");jTextField40.setText("");jTextField39.setText("");jTextField41.setText("");jTextField42.setText("");
-    jTextField44.setText("");
-    
+        jComboBox1.setSelectedIndex(0);//Ação de limpar tela
+        jComboBox2.setSelectedIndex(0);
+        jTextField1.setText("");
+        ValorProduto.setText("");
+        ValorMaoObra.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField5.setText("");
+        jTextField6.setText("");
+        jTextField7.setText("");
+        jTextField8.setText("");
+        jTextField9.setText("");
+        jTextField10.setText("");
+        jTextField11.setText("");
+        jTextField12.setText("");
+        jTextField13.setText("");
+        jTextField14.setText("");
+        jTextField15.setText("");
+        jTextField16.setText("");
+        jTextField17.setText("");
+        jTextField18.setText("");
+        jTextField19.setText("");
+        jTextField23.setText("");
+        jTextField21.setText("");
+        jTextField20.setText("");
+        jTextField22.setText("");
+        jTextField26.setText("");
+        jTextField24.setText("");
+        jTextField27.setText("");
+        jTextField25.setText("");
+        jTextField28.setText("");
+        jTextField33.setText("");
+        jTextField30.setText("");
+        jTextField31.setText("");
+        jTextField32.setText("");
+        jTextField29.setText("");
+        jTextField34.setText("");
+        jTextField35.setText("");
+        jTextField36.setText("");
+        jTextField37.setText("");
+        jTextField38.setText("");
+        jTextField43.setText("");
+        jTextField40.setText("");
+        jTextField39.setText("");
+        jTextField41.setText("");
+        jTextField42.setText("");
+        jTextField44.setText("");
+
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
@@ -1206,9 +1249,10 @@ public class Orcamento extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField44ActionPerformed
 
     private void jComboBox2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jComboBox2FocusLost
-         // FocusLost ao sair do campo realiza uma função
-       orcamento(jComboBox1.getSelectedItem().toString(),jComboBox2.getSelectedItem().toString());
-       orcamentoMo(jComboBox1.getSelectedItem().toString(),jComboBox2.getSelectedItem().toString());
+        // FocusLost ao sair do campo realiza uma função
+        //Metodo de calculo de valor do produto e Metodo de calulo da Mão de Obra
+        orcamento(jComboBox1.getSelectedItem().toString(), jComboBox2.getSelectedItem().toString());
+        orcamentoMo(jComboBox1.getSelectedItem().toString(), jComboBox2.getSelectedItem().toString());
     }//GEN-LAST:event_jComboBox2FocusLost
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
@@ -1216,13 +1260,15 @@ public class Orcamento extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         JOptionPane.showInternalMessageDialog(null,
-                 "Orientações ao usuário:"+ "\n"+
-                 "A tecla \"Tab \" realiza a consulta do orçamento."+"\n"+
-                 "Em resposta ao componente será exibido: seu valor de produto, seu tempo de mão de obra/serviço, seu valor de mão de obra e o valor total de reparação." +"\n"+
-                 "Para alimentação de mais componentes a serem reparados, após a resposta, clique em \"+Adcionar\" e informe o proximo componente em reparação."+"\n"+
-                 "O campo Total Geral, indica o somátorio de todas as buscas de reparação efetuadas em um mesmo veículo."+"\n"+
-                 "Para buscar orçamento de outro veiculo, clique em limpar tela,  troque o modelo e siga como feito anteriormente.");
+        //Implementação do recurso Help
+
+        JOptionPane.showInternalMessageDialog(null,
+                "Orientações ao usuário:" + "\n"
+                + "A tecla \"Tab \" realiza a consulta do orçamento." + "\n"
+                + "Em resposta ao componente será exibido: seu valor de produto, seu tempo de mão de obra/serviço, seu valor de mão de obra e o valor total de reparação." + "\n"
+                + "Para alimentação de mais componentes a serem reparados, após a resposta, clique em \"+Adcionar\" e informe o proximo componente em reparação." + "\n"
+                + "O campo Total Geral, indica o somátorio de todas as buscas de reparação efetuadas em um mesmo veículo." + "\n"
+                + "Para buscar orçamento de outro veiculo, clique em limpar tela,  troque o modelo e siga como feito anteriormente.");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
