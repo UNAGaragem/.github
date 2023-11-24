@@ -3,22 +3,29 @@
 
 Trata-se de um Projeto desenvolvido em sala de aula, para uso em um Centro Automotivo - Oficina de Serviços.
 
-O projeto prevê a criação de um sistema que permite alimentação, gerenciamento e gerenciamento de informações de serviços realizados em veículos de clientes.+
+O projeto prevê a criação de um sistema que permite alimentação, tráfego e gerenciamento de informações de serviços realizados em veículos de clientes.
 
-O projeto pode ser útil para auxiliar no controle e controle do escritório em relação ao seu estoque e demandas.
+O projeto considera utilização do padrão MVC bem como, boas praticas de programação, documentação do desenvolvimento, testes unitários e automatizados no JAVA.
 
-O sistema será desenvolvido em JAVA.
+Foi um grande desafio vencido e um aprendizado de alto nivel.
 
-Equipe de projeto:
+Equipe de projeto :
+Product Owner - Edinilson Monteiro;
+Scrum Master - Sudário Gonçalves;
 
-Product Owner - Ednilson - edmonteirocury@gmail.com / Marcelo - marcelogoncalves0222@gmail.com .
+Desenvolvedores: 
+Edileuza Cruz; 
+Rafael Nogueira; 
+Gabriel Arthur;
+Gustavo Enmerick; 
+Reginaldo Martins; 
+Marcelo Gonçalves.
 
-Scrum Master - Sudário -sudarioogoncalves@gmail.com ;
+Curso: Análise e Desenvolvimento de Sistemas
 
-Desenvolvedores: Edileuza - edileuzacruz489@gmail.com ; Rafael - nrafael832@gmail.com ; Gabriel - bilgabriel124@gmail.com ; Gustavo - gustavo.enmeriki@gmail.com ; Reginaldo - reginaldomc@hotmail.com.
+Orientadores:
+Rafaela Moreira e Edyene Oliveira - Qualidade de Software.
+Edyene Oliveira - Qualidade de Software.
+Julio Vilela - Gestão de Software
+Erika Oliveira - Gestão de Software
 
-Curso: Tecnólogo em Análise e Desenvolvimento de Sistema - UNA - Contagem /2023-02
-
-Direitos reservados à equipe de projeto.
-
-Os orientadores são os professores: Edyene CA Oliveira - Qualidade de Software; Érica Oliveira - Engenharia de Software; Julio Vilela - Engenharia de Software; Rafaela Moreira - Qualidade de Software.
